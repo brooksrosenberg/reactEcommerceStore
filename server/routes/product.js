@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { query } = require('express');
 const Product = require('../models/Product');
-const User = require('../models/User');
 const { verifyToken, verifyTokenAndAuth, verifyTokenAndAdmin } = require('../utils/token-verification');
 
 router.get('/test', (req, res) => {
