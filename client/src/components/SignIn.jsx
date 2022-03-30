@@ -2,7 +2,16 @@ import React from 'react'
 
 const SignIn = () => {
   return (
-    <div>Sign in</div>
+    <section >
+        <div > 
+            <title > SIGN IN  </title>
+            <form >
+                <input placeholder='username' />
+                <input placeholder='password' />
+                <button > LOGIN </button>
+            </form>
+        </div>
+    </section>
   )
 }
 
