@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
 });
 
 //UPDATE cart -- ANY LOGGED in user can update THEIR OWN car (verifyTokenAndAuth)
-router.put('/:id', verifyTokenAndAuth, async (req, res) => {
+router.put('/:id', async (req, res) => {
     try {
         const updatedCart = await Cart.findByIdAndUpdate(
             req.params.id,
@@ -55,9 +55,9 @@ router.get('/find/:id', async (req, res) => {
 });
 
 //GET ALL CARTS -- ADMIN ONLY (verifyTokenAndAdmin)
-router.get('/', verifyTokenAndAdmin, async(req,res)=>{
-    try{
-        const carts = await Carts.find();
+router.get('/find', async(req,res)=>{
+    try {
+        const carts = await Cart.find();
         res.status(200).json(carts);
     } catch (err){
         res.status(500).json(err);

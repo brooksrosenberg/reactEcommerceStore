@@ -18,8 +18,8 @@ router.post('/', async (req, res) => {
     }
 });
 
-//UPDATE Order -- Only ADMIN can update order
-router.put('/:id', verifyTokenAndAdming, async (req, res) => {
+//UPDATE Order -- Only ADMIN can update order (verifyTokenAndAdmin)
+router.put('/:id', async (req, res) => {
     try {
         const updatedOrder = await Order.findByIdAndUpdate(
             req.params.id,
@@ -38,7 +38,7 @@ router.put('/:id', verifyTokenAndAdming, async (req, res) => {
 router.delete('/:id', async (req,res) => {
     try {
         await Order.findByIdAndDelete(req.params.id);
-        res.status(200).json("Order was emptied")
+        res.status(200).json("Order was deleted")
     } catch (err) {
         res.status(500).json(err)
     }
@@ -55,7 +55,7 @@ router.get('/find/:id', async (req, res) => {
 });
 
 //GET ALL Orders -- ADMIN ONLY (verifyTokenAndAdmin)
-router.get('/', verifyTokenAndAdmin, async(req,res)=>{
+router.get('/', async(req,res)=>{
     try{
         const orders = await Order.find();
         res.status(200).json(orders);
@@ -63,5 +63,6 @@ router.get('/', verifyTokenAndAdmin, async(req,res)=>{
         res.status(500).json(err);
     }
 });
+
 
 module.exports = router
