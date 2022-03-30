@@ -9,6 +9,11 @@ const SignIn = () => {
                 <input placeholder='username' className='input'/>
                 <input placeholder='password' className='input'/>
                 <button className='button'> LOGIN </button>
+                <p className='link'> 
+                  <a href='#'>
+                    CREATE A NEW ACCOUNT
+                  </a> 
+                </p>
             </form>
         </div>
     </section>
