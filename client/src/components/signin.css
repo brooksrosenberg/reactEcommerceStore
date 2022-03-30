@@ -9,3 +9,19 @@
     align-items: center;
     justify-content: center;
 }
+
+.wrapper {
+    width: 40%;
+    padding: 20px;
+    background-color: white;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.form {
+    display: flex;
+    flex-direction: column ;
+}
