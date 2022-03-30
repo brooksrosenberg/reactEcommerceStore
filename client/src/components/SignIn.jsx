@@ -2,13 +2,13 @@ import React from 'react'
 
 const SignIn = () => {
   return (
-    <section >
-        <div > 
-            <title > SIGN IN  </title>
-            <form >
-                <input placeholder='username' />
-                <input placeholder='password' />
-                <button > LOGIN </button>
+    <section className='container'>
+        <div className='wrapper'> 
+            <title className='tittle'> SIGN IN  </title>
+            <form className='form'>
+                <input placeholder='username' className='input'/>
+                <input placeholder='password' className='input'/>
+                <button className='button'> LOGIN </button>
             </form>
         </div>
     </section>
