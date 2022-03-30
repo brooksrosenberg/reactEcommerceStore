@@ -1,6 +1,5 @@
 import React from 'react'
 import './navbar.css'
-import { Search } from '@material-ui/icons'
 
 const Navbar = () => {
     return (
