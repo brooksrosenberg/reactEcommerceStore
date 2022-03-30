@@ -18,17 +18,17 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-right">
                     <Link className="navbar-item" to="/register">
-                        REGISTER
+                        Register
                     </Link>
-                    <div className="navbar-item">
-                        SIGN IN
-                    </div>
-                    <div className="navbar-item">
-                        CART 🛒
+                    <Link className="navbar-item" to="/signin">
+                        Sign in
+                    </Link>
+                    <Link className="navbar-item" to="/cart">
+                        Cart 🛒
+                    </Link>
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 

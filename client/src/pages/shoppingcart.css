@@ -1,0 +1,24 @@
+.cart-container{
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+.info-container{
+    border: 1px black solid;
+    justify-content: center;
+    align-items: center;
+}
+.cart-items{
+    align-items: center;
+    width:auto;
+    border: 1px black solid;
+}
+.cart-list{
+    list-style-type: none;
+    background-color: slategray;
+}
+.cart-button{
+    justify-content: center;
+    background-color: rgba(70, 70, 70, 0.781);
+    color: rgb(255, 255, 255);
+}
