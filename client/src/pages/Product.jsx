@@ -14,7 +14,26 @@ const Product = () => {
                  sit deserunt voluptates amet, 
                 vero eveniet ducimus repudiandae nostrum. Doloremque, sequi?</p>
             <span className='price'> $ 2000 </span>
-            
+            <div className='filterContainer'>
+                <div>
+                    <details>Color</details>
+                    <span color='black'/>
+                    <span color='darkblue'/>
+                    <span color='gray'/>
+                </div>
+
+                <div>
+                    <details>Size</details>
+                    <div>
+                        <span> XS</span>
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </article>
     
