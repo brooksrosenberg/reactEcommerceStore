@@ -20,9 +20,9 @@ const Navbar = () => {
                     <Link className="navbar-item" to="/register">
                         REGISTER
                     </Link>
-                    <div className="navbar-item">
+                    <Link className="navbar-item" to="/signin">
                         SIGN IN
-                    </div>
+                    </Link>
                     <div className="navbar-item">
                         CART 🛒
                     </div>
