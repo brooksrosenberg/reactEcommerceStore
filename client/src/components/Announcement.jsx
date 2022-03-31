@@ -4,7 +4,7 @@ import React from 'react'
 const Announcement = () => {
   return (
     <div className='a-container'>
-        Free Shippin on Orders over $30
+        Free Shippin' on Orders over $30
     </div>
   )
 }
