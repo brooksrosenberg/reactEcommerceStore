@@ -6,6 +6,7 @@ import SignIn from './components/SignIn';
 import Pay from './components/Pay';
 import Cart from './pages/Shoppingcart';
 import Success from './components/Success';
+import Product from './pages/Product';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
@@ -15,7 +16,7 @@ function App() {
   return ( 
     <Router>
       <Routes>
-        <Route
+        <Route 
           path='/'
           element={<Home/>}
         />
@@ -42,6 +43,10 @@ function App() {
         <Route
           path='/cart'
           element={<Cart/>}
+        />
+        <Route 
+          path='/product'
+          element={<Product/>}
         />
       </Routes>
     </Router>
