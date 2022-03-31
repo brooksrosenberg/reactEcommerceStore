@@ -93,3 +93,17 @@ font-weight: 200;
     justify-content: center;
     margin: 0px 5px;
 }
+.amount:hover {
+    background-color: rgb(250, 211, 217);
+}
+
+.button {
+    padding: 15px;
+    border: 2px solid teal;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+.button:hover {
+    background-color: rgb(250, 211, 217);
+}
