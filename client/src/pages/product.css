@@ -71,6 +71,9 @@ font-weight: 200;
 
 }
 
+.divSize {
+    margin-left: 10px;
+}
 .addContainer {
     width: 50%;
     display: flex;

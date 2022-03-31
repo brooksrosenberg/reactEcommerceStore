@@ -33,7 +33,7 @@ const Product = () => {
 
 
                     {/* Size settings */}
-                    <div>
+                    <div className='divSize'>
                         <span className='filterSize'>Size</span>
                         <select>
                             <option> XS</option>
