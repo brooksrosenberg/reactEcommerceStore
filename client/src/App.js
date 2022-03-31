@@ -2,9 +2,10 @@ import './App.css';
 import { Home } from './pages/Home'
 import Category from './components/Categories'
 import RegisterPlaceholder from './components/RegisterPlaceholder';
+import SignIn from './components/SignIn';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
-import SignIn from './components/SignIn';
+
 
 function App() {
   return ( 
