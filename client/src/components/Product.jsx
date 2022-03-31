@@ -1,9 +1,12 @@
 import './product.css'
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 
 const Product = () => {
   return (
-    <div>Product</div>
+    <div>
+      Product
+    </div>
   )
 }
 
