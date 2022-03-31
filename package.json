@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/brooksrosenberg/reactEcommerceStore#readme",
   "dependencies": {
+    "axios": "^0.26.1",
     "concurrently": "^7.0.0"
   }
 }
