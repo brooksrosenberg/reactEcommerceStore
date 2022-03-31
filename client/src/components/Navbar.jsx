@@ -18,17 +18,25 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-right">
                     <Link className="navbar-item" to="/register">
-                        REGISTER
+                        Register
                     </Link>
                     <Link className="navbar-item" to="/signin">
-                        SIGN IN
+                        Sign in
                     </Link>
-                    <div className="navbar-item">
-                        CART 🛒
+                    <Link className="navbar-item" to="/cart">
+                        Cart 🛒
+                    </Link>
+// <<<<<<< shoppingcart
+// =======
+//                     <Link className="navbar-item" to="/signin">
+//                         SIGN IN
+//                     </Link>
+//                     <div className="navbar-item">
+//                         CART 🛒
+// >>>>>>> main
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 
