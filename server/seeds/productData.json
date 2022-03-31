@@ -1,0 +1,42 @@
+[
+    {
+      "_id": "6244a8216298ee43ae40058e",
+      "title": "Nike Jordan 1",
+      "description": "fly ass kicks ferda bois",
+      "img": "https://images.pexels.com/photos/5771895/pexels-photo-5771895.jpeg",
+      "category": "shoes",
+      "size": "11",
+      "price": 210,
+      "location": "Manhattan",
+      "createdAt": "2022-03-30T18:57:37.172Z",
+      "updatedAt": "2022-03-30T19:33:07.935Z",
+      "__v": 0
+    },
+    {
+      "_id": "6244a8216298ee43ae40058e",
+      "title": "Nike Jordan 1",
+      "description": "fly ass kicks ferda bois",
+      "img": "https://images.pexels.com/photos/5771895/pexels-photo-5771895.jpeg",
+      "category": "shoes",
+      "size": "11",
+      "price": 210,
+      "location": "Manhattan",
+      "createdAt": "2022-03-30T18:57:37.172Z",
+      "updatedAt": "2022-03-30T19:33:07.935Z",
+      "__v": 0
+    },
+    {
+      "_id": "6244a8216298ee43ae40058e",
+      "title": "Nike Jordan 1",
+      "description": "fly ass kicks ferda bois",
+      "img": "https://images.pexels.com/photos/5771895/pexels-photo-5771895.jpeg",
+      "category": "shoes",
+      "size": "11",
+      "price": 210,
+      "location": "Manhattan",
+      "createdAt": "2022-03-30T18:57:37.172Z",
+      "updatedAt": "2022-03-30T19:33:07.935Z",
+      "__v": 0
+    }
+  ]
+  
