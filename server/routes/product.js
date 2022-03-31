@@ -57,7 +57,7 @@ router.get('/:id', async (req, res) => {
 router.get('/', async (req, res) => {
     const qNew = req.query.new;
     const qCategory = req.query.category;
-    const qLocation = req.query.location;
+    const qLocation = req.query.location; //http://localhost:3001/api/product?location
     try {
         let products;
         if(qNew) {

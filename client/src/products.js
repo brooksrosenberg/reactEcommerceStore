@@ -1,4 +1,4 @@
-const products = [
+const popularProducts = [
     {
         id: 1,
         img: 'https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -25,4 +25,4 @@ const products = [
     }
 ]
 
-export default products
+export default popularProducts
