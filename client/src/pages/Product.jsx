@@ -1,7 +1,7 @@
 import React from 'react'
 import Announcement from '../components/Announcement'
 import Navbar from '../components/Navbar'
-
+import './product.css'
 
 const Product = () => {
   return (
@@ -18,24 +18,31 @@ const Product = () => {
                     Quas esse quaerat nemo hic blanditiis. Minus eligendi odio quaerat fugit,
                     sit deserunt voluptates amet, 
                     vero eveniet ducimus repudiandae nostrum. Doloremque, sequi?</p>
-                <span className='price'> $ 2000 </span>
+                <span className='price'> $ 200 </span>
                 <div className='filterContainer'>
-                    <div>
-                        <details>Color</details>
-                        <span color='black'/>
-                        <span color='darkblue'/>
-                        <span color='gray'/>
+                    <div className='colorFilter'>
+                        <select>
+                            <option color='black'> </option>
+                            <option color='darkblue'> </option>
+                            <option color='gray'> </option>
+                            {/* <span color='black'/>
+                            <span color='darkblue'/>
+                            <span color='gray'/> */}
+                        </select>
+                        
                     </div>
 
                     <div>
                         <details>Size</details>
-                        <div>
-                            <span> XS</span>
-                            <span>S</span>
-                            <span>M</span>
-                            <span>L</span>
-                            <span>XL</span>
-                        </div>
+                        <select>
+                            <option> XS</option>
+                            <option> S</option>
+                            <option> M</option>
+                            <option> L</option>
+                            <option> XL</option>
+                            <option> 2XL</option>
+                            
+                        </select>
                         
                     </div>
                 </div>
