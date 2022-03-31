@@ -1,0 +1,52 @@
+.container {
+    width: 100vw;
+    height: 50vw;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
+    center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 40%;
+    padding: 20px;
+    background-color: white;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.form {
+    display: flex;
+    flex-direction: column ;
+}
+
+.input{
+    flex: 1;
+    min-width: 40%;
+    margin: 20px 10px 0px 0px;
+    padding: 10px;
+}
+
+.button {
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: rgb(243, 210, 214);
+    cursor: pointer;
+}
+
+.link {
+    margin: 5px 0px;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}

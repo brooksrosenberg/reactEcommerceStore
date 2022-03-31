@@ -1,0 +1,76 @@
+.register-body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    background: linear-gradient(135deg, #87c3eb, #e9e3eb);
+}
+
+.register-container {
+    max-width: 700px; 
+    width: 100%;
+    background: #fff;
+    padding: 30px 30px 30px;
+    border-radius: 10px; 
+}
+
+.register-title {
+    font-size:25px;
+    font-weight:500;
+    position: relative;
+    margin-bottom: 5px; 
+}
+
+.register-user-details form {
+    display: flex; 
+    flex-wrap: wrap;  
+    justify-content: space-between;
+}
+
+.register-user-details .input-box {
+    width: calc(100% / 2 -20px);
+}
+
+.register-user-details .input-box input {
+   height: 45px; 
+   width: 100%;
+   margin-bottom: 10px;
+   outline: none;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   padding-left: 15px; 
+   font-size: 16px; 
+   border-bottom-width: 2px; 
+   transition: all 0.3s ease; 
+}
+
+.register-button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+.register-button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    background-color: teal;
+    font-size: 16px;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    border-radius: 5px; 
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+    .register-user-details .input-box {
+        width: 100%;
+    } 
+    .register-user-details form {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
