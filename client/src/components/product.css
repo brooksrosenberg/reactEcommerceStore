@@ -1,0 +1,25 @@
+.p-container {
+    position: relative;
+    flex: 1;
+    margin: 25px;
+    min-width: 280px;
+    height: 350px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.p-info{
+    display: flex;
+}
+.p-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.p-icons {
+    right: 20px;
+}
