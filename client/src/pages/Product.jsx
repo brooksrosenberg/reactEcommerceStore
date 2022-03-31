@@ -7,7 +7,7 @@ const Product = () => {
   return (
     <div>
         
-        <article className='wrapper'>
+        <article className='productwrapper'>
             <div className='imageContainer'>
                 <img className='image' src='https://images.pexels.com/photos/1485031/pexels-photo-1485031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'/>
             </div>
@@ -34,7 +34,7 @@ const Product = () => {
 
                     {/* Size settings */}
                     <div>
-                        <span>Size</span>
+                        <span className='filterSize'>Size</span>
                         <select>
                             <option> XS</option>
                             <option> S</option>
