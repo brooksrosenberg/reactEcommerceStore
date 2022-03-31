@@ -7,8 +7,7 @@ router.get('/test', (req, res) => {
     res.send('Good test of the auth route')
 })
 
-//REGISTRATION 
-
+//REGISTRATION -- ANYBODY can register
 router.post('/register', async (req, res) => {
     const newUser = new User({
         username: req.body.username,
@@ -24,8 +23,7 @@ router.post('/register', async (req, res) => {
     }
 });
 
-//LOGIN 
-
+//LOGIN -- ANYBODY can login
 router.post('/login', async (req, res) => {
     try {
         const user = await User.findOne({ username: req.body.username });
