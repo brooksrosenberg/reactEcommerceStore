@@ -7,7 +7,7 @@ const Cart = () => {
   return (
     <div className="cart-container">
       <div className="cart-wrapper">
-        <div className="info-container">
+        <div className="cart-card-container">
           <h1 className="cart-title">Your Bag</h1>
           <p className="cart-description">View your items below</p>
             <div className="cart-items">

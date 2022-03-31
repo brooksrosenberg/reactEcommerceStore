@@ -3,7 +3,7 @@
     justify-content: center;
     display: flex; 
 }
-.info-container{
+.cart-card-container{
     border: 1px black solid;
     justify-content: center;
     align-items: center;
