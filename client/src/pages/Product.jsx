@@ -6,8 +6,7 @@ import './product.css'
 const Product = () => {
   return (
     <div>
-        <Navbar />
-        <Announcement />
+        
         <article className='wrapper'>
             <div className='imageContainer'>
                 <img className='image' src='https://images.pexels.com/photos/1485031/pexels-photo-1485031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'/>
@@ -20,20 +19,22 @@ const Product = () => {
                     vero eveniet ducimus repudiandae nostrum. Doloremque, sequi?</p>
                 <span className='price'> $ 200 </span>
                 <div className='filterContainer'>
-                    <div className='colorFilter'>
-                        <select>
-                            <option color='black'> </option>
-                            <option color='darkblue'> </option>
-                            <option color='gray'> </option>
-                            {/* <span color='black'/>
-                            <span color='darkblue'/>
-                            <span color='gray'/> */}
+
+                    {/* Color settings */}
+                    <div className='divFilter'>
+                        <span className='filterTitle'>Color</span> 
+                        <select> 
+                            <option >black </option>
+                            <option >darkblue </option>
+                            <option >gray</option>
                         </select>
-                        
+                         
                     </div>
 
+
+                    {/* Size settings */}
                     <div>
-                        <details>Size</details>
+                        <span>Size</span>
                         <select>
                             <option> XS</option>
                             <option> S</option>
@@ -44,6 +45,17 @@ const Product = () => {
                             
                         </select>
                         
+                    </div>
+                </div>
+
+                {/* This is for adding it to the cart */}
+
+                <div className='addContainer'>
+                    <div className='amountContainer'>
+                        <span> &#10134;</span>
+                        <span className='amount'> 1</span>
+                        <span> &#10133;</span>
+                        <button className='button'> ADD TO CART </button>
                     </div>
                 </div>
             </div>
