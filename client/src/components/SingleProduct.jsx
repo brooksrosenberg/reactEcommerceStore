@@ -1,5 +1,6 @@
 import './singleproduct.css'
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { ShoppingCartOutlined, SearchOutlined, FavoriteBorderOutlined } from '@material-ui/icons'
 
 const SingleProduct = ({ item }) => {
@@ -17,12 +18,13 @@ const SingleProduct = ({ item }) => {
           <div className="p-icon">
             <FavoriteBorderOutlined/>
           </div>
+          <Link to={`/product/${item._id}`}>
           <div className="p-icon">
             <SearchOutlined/>
           </div>
+          </Link>
         </div>
       </div>
       )
 }
-
       export default SingleProduct
