@@ -10,6 +10,7 @@ import Product from './pages/Product';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Announcement from './components/Announcement'
+import CategoryList from './components/CategoryList'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
@@ -51,13 +52,13 @@ function App() {
           element={<Cart/>}
         />
         <Route 
-          path='/product'
-          element={<Product/>}
-        />
-        <Route 
           path='/product/:id'
           element={<Product/>}
-        />  
+        />
+        <Route
+          path='/category/:category'
+          element={<CategoryList/>}
+        />    
       </Routes>
       <Footer/>
     </Router>
