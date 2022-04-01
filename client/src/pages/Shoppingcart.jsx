@@ -1,9 +1,13 @@
 import React, {useState, useEffect} from "react";
 import './shoppingcart.css';
 import axios from "axios";
-import {useNavigate} from 'react-router-dom'
+// <<<<<<< fixpdata2.0
+ 
+// =======
+// import {useNavigate} from 'react-router-dom'
 
 
+// >>>>>>> main
 const baseURL = "api/cart/find";
 
 export default function Cart() {
@@ -20,7 +24,10 @@ export default function Cart() {
   
 
   if (!post) return null;
-  console.log(post)
+  console.log(post);
+  console.log(post[0].products)
+
+  const products = post[0].products;
 
   const submitForm = async () => {
     try {
@@ -43,7 +50,8 @@ export default function Cart() {
           <p className="cart-description">View your items below</p>
             <div className="cart-items">
                 <li className="cart-list">
-                    <ul>{post.map((cart) => {
+                    <ul>{products.map((cart) => {
+                      console.log(cart.title);
                     return (
                       <div key={cart}>
                       <div>Title:{cart.title}</div>
@@ -54,15 +62,7 @@ export default function Cart() {
                       <div>Price:{cart.price}</div>
                       <div>Location:{cart.location}</div>
                       </div>
-                      // <div key={product}>
-                      // <div>Title:{product.title}</div>
-                      // <div>Description:{product.description}</div>
-                      // <img className='product-img' src={product.img}></img>
-                      // <div>Category:{product.category}</div>
-                      // <div>Size:{product.size}</div>
-                      // <div>Price:{product.price}</div>
-                      // <div>Location:{product.location}</div>
-                      // </div>
+                    
                     )})}
                     </ul>
                 </li>
