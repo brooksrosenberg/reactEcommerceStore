@@ -36,7 +36,7 @@ const SignIn = () => {
   return (
     <section className='container'>
         <div className='wrapper'> 
-            <title className='tittle'> SIGN IN  </title>
+            <div className='signin-title'> SIGN IN  </div>
             <form onSubmit={submitForm} className='form'>
                 <input name='username' value={formState.username} onChange={handleChange} placeholder='username' className='input'/>
                 <input name='password' value={formState.password} onChange={handleChange} type='password' placeholder='password' className='input'/>
