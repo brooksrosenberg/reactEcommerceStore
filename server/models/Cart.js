@@ -5,7 +5,7 @@ const CartSchema = new Schema(
         userId: {type:String, required:true},
         products: [
             {
-            productId: {type:String},
+            productId: {type:String, unique:true},
             title: {type:String, required:true, unique:true},
             description: {type:String, required:true, unique:true},
             img: {type:String, required:true},

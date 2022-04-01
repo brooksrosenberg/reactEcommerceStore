@@ -6,15 +6,21 @@ const productData = require('./productData.json');
 const userData = require('./userData.json');
 
 db.once('open', async () => {
+try{
   // clean database
-  await Cart.deleteMany({});
-  await Product.deleteMany({});
   await User.deleteMany({});
+  await Product.deleteMany({});
+  await Cart.deleteMany({});
 
   // bulk create each model
-  const carts = await Cart.insertMany(cartData);
-  const products = await Product.insertMany(productData);
   const users = await User.insertMany(userData);
+  const products = await Product.insertMany(productData);
+  const carts = await Cart.insertMany(cartData);
+
+} catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
 
   console.log('all done!');
   process.exit(0);
