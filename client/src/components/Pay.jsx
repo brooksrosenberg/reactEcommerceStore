@@ -31,6 +31,7 @@ const Pay = () => {
         };
         stripeToken && makeRequest()
     }, [stripeToken, navigate])
+
   return (
     <div className='pay-container'>
         <StripeCheckout 
