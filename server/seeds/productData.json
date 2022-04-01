@@ -31,12 +31,12 @@
   },
   {
     "productId": 3,
-    "title": "White High Heels",
-    "description": "For the any time",
-    "img": "https://images.pexels.com/photos/2965276/pexels-photo-2965276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
-    "category": "Women's Shoes",
+    "title": "Black Vans Hoodie",
+    "description": "For any time",
+    "img": "https://images.pexels.com/photos/702350/pexels-photo-702350.jpeg",
+    "category": "Men's Clothes",
     "size": "S",
-    "price": 385,
+    "price": 85,
     "location": "Manhattan"
   },
   {
@@ -53,7 +53,7 @@
     "productId": 5,
     "title": "Tan Dress Socks",
     "description": "For the freshest feet",
-    "img": "https://images.pexels.com/photos/5746076/pexels-photo-5746076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "img": "https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
     "category": "Men's Clothes",
     "size": "M",
     "price": 15,
