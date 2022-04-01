@@ -1,0 +1,72 @@
+[
+  {
+    "productId": 0,
+    "title": "Nike Jordan 1",
+    "description": "fly ass kicks ferda bois",
+    "img": "https://images.pexels.com/photos/5771895/pexels-photo-5771895.jpeg",
+    "category": "Men's Shoes",
+    "size": "11",
+    "price": 210,
+    "location": "Manhattan"
+  },
+  {
+    "productId": 1,
+    "title": "Puffer Jacket",
+    "description": "Feel like you're wrapped in a cloud",
+    "img": "https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Women's Clothes",
+    "size": "S",
+    "price": 110,
+    "location": "Manhattan"
+  },
+  {
+    "productId": 2,
+    "title": "Rugged Leather Shoe",
+    "description": "For the outdoor man",
+    "img": "https://images.pexels.com/photos/60619/boot-leather-shoe-old-60619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Men's Shoes",
+    "size": "M",
+    "price": 85,
+    "location": "Manhattan"
+  },
+  {
+    "productId": 3,
+    "title": "White High Heels",
+    "description": "For the any time",
+    "img": "https://images.pexels.com/photos/2965276/pexels-photo-2965276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Women's Shoes",
+    "size": "S",
+    "price": 385,
+    "location": "Manhattan"
+  },
+  {
+    "productId": 4,
+    "title": "Adam Kimmel Watch",
+    "description": "The refined way to know the time",
+    "img": "https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Watches",
+    "size": "40.5mm",
+    "price": 765,
+    "location": "Manhattan"
+  },
+  {
+    "productId": 5,
+    "title": "Tan Dress Socks",
+    "description": "For the freshest feet",
+    "img": "https://images.pexels.com/photos/5746076/pexels-photo-5746076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Men's Clothes",
+    "size": "M",
+    "price": 15,
+    "location": "Manhattan"
+  },
+  {
+    "productId": 6,
+    "title": "Sunglasses",
+    "description": "Stop the sun in style",
+    "img": "https://images.pexels.com/photos/701877/pexels-photo-701877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Accessories",
+    "size": "M",
+    "price": 65,
+    "location": "Manhattan"
+  }
+]

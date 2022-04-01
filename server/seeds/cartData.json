@@ -1,0 +1,22 @@
+[
+      {
+        "userId": "GeorgeC",
+        "products": [
+        {"productId": 2,
+        "title": "Rugged Leather Shoe",
+        "description": "For the outdoor man",
+        "img": "https://images.pexels.com/photos/60619/boot-leather-shoe-old-60619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+        "category": "Men's Shoes",
+        "size": "M",
+        "price": 85,
+        "location": "Manhattan"},
+       {"productId": 0,
+        "title": "Nike Jordan 1",
+        "description": "fly ass kicks ferda bois",
+        "img": "https://images.pexels.com/photos/5771895/pexels-photo-5771895.jpeg",
+        "category": "Men's Shoes",
+        "size": "11",
+        "price": 210,
+        "location": "Manhattan"}]
+      }
+]
