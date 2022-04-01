@@ -28,6 +28,12 @@ export default function Cart() {
     }
     catch(err) {console.log(err)}
   }
+  const gobackForm = async () => {
+    try {
+      navigate('/');
+    }
+    catch(err) {console.log(err)}
+  }
 
   return (
     <div className="cart-container">
@@ -63,6 +69,9 @@ export default function Cart() {
             </div>
             <div className='checkout-button'>
               <input onClick={submitForm} type='button' value='Checkout'></input>
+            </div>
+            <div className='Go-Back-button'>
+              <input onClick={gobackForm} type='button' value='Go Back'></input>
             </div>
         </div>
       </div>
