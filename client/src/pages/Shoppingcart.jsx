@@ -27,17 +27,26 @@ export default function Cart() {
           <p className="cart-description">View your items below</p>
             <div className="cart-items">
                 <li className="cart-list">
-                    <ul>{post.map((product) => {
+                    <ul>{post.map((cart) => {
                     return (
-                      <div key={product}>
-                      <div>Title:{product.title}</div>
-                      <div>Description:{product.description}</div>
-                      <img className='product-img' src={product.img}></img>
-                      <div>Category:{product.category}</div>
-                      <div>Size:{product.size}</div>
-                      <div>Price:{product.price}</div>
-                      <div>Location:{product.location}</div>
+                      <div key={cart}>
+                      <div>Title:{cart.title}</div>
+                      <div>Description:{cart.description}</div>
+                      <img className='cart-product-img' alt='cart product'src={cart.img}></img>
+                      <div>Category:{cart.category}</div>
+                      <div>Size:{cart.size}</div>
+                      <div>Price:{cart.price}</div>
+                      <div>Location:{cart.location}</div>
                       </div>
+                      // <div key={product}>
+                      // <div>Title:{product.title}</div>
+                      // <div>Description:{product.description}</div>
+                      // <img className='product-img' src={product.img}></img>
+                      // <div>Category:{product.category}</div>
+                      // <div>Size:{product.size}</div>
+                      // <div>Price:{product.price}</div>
+                      // <div>Location:{product.location}</div>
+                      // </div>
                     )})}
                     </ul>
                 </li>
