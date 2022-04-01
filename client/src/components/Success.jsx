@@ -16,7 +16,7 @@ const Success = () => {
         <img src="https://images.pexels.com/photos/3905859/pexels-photo-3905859.jpeg" className='success-image'></img>
         <h1>Success!</h1>
         <h4>Order complete. Thanks for choosing Craft!</h4>
-        <div className='back-button'>
+        <div className='btn-back-button'>
             <input onClick={submitForm} type='button' value='Back to Home'></input>
         </div>
     </div>

@@ -4,9 +4,7 @@ import '../components/Footer.css';
 const Footer = () => {
     return ( 
         <footer className='footer-body'>
-            
             <div className='footer-container'>
-                <hr/>
                 <div className='footer-row2'>
                     <p className='footer-col-sm'>
                         &copy;{new Date().getFullYear()} LIMITLESS REEFER INC | All Rights Reserved | Terms of Service | Privacy

@@ -21,3 +21,19 @@ h4 {
     padding: 30px;
 }
 
+.btn-back-button input {
+    position: relative;
+    width: 200px; 
+    height: 50px; 
+    top: 50%;
+    border-radius: 8px;
+    background: teal;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 3px 5px #BFCEEF 
+}
+
