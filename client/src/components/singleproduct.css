@@ -8,6 +8,7 @@
     align-items:center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .p-info{
@@ -19,6 +20,9 @@
     border-radius: 10px;
 }
 
+.p-text {
+    letter-spacing: 1px;
+}
 
 .p-icons {
     right: 20px;

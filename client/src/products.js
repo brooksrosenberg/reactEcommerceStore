@@ -9,7 +9,7 @@ const popularProducts = [
     },
     {
         id: 3,
-        img: 'https://images.pexels.com/photos/2965276/pexels-photo-2965276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        img: 'https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     },
     {
         id: 4,
@@ -17,7 +17,7 @@ const popularProducts = [
     },
     {
         id: 5,
-        img: 'https://images.pexels.com/photos/5746076/pexels-photo-5746076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        img: 'https://images.pexels.com/photos/702350/pexels-photo-702350.jpeg'
     },
     {
         id: 6,
