@@ -7,6 +7,7 @@ import Pay from './components/Pay';
 import Cart from './pages/Shoppingcart';
 import Success from './components/Success';
 import Product from './pages/Product';
+import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
@@ -49,7 +50,9 @@ function App() {
           element={<Product/>}
         />
       </Routes>
+      <Footer/>
     </Router>
+    
   );
 }
 
