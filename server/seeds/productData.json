@@ -4,8 +4,8 @@
     "title": "Nike Jordan 1",
     "description": "fly ass kicks ferda bois",
     "img": "https://images.pexels.com/photos/5771895/pexels-photo-5771895.jpeg",
-    "category": "Men's Shoes",
-    "size": "11",
+    "category": "Mens",
+    "size": "9",
     "price": 210,
     "location": "Manhattan"
   },
@@ -14,18 +14,18 @@
     "title": "Puffer Jacket",
     "description": "Feel like you're wrapped in a cloud",
     "img": "https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
-    "category": "Women's Clothes",
+    "category": "Womens",
     "size": "S",
     "price": 110,
-    "location": "Manhattan"
+    "location": "Queens"
   },
   {
     "productId": 2,
     "title": "Rugged Leather Shoe",
     "description": "For the outdoor man",
     "img": "https://images.pexels.com/photos/60619/boot-leather-shoe-old-60619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
-    "category": "Men's Shoes",
-    "size": "M",
+    "category": "Mens",
+    "size": "9",
     "price": 85,
     "location": "Manhattan"
   },
@@ -34,17 +34,17 @@
     "title": "Black Vans Hoodie",
     "description": "For any time",
     "img": "https://images.pexels.com/photos/702350/pexels-photo-702350.jpeg",
-    "category": "Men's Clothes",
+    "category": "Mens",
     "size": "S",
     "price": 85,
-    "location": "Manhattan"
+    "location": "Bronx"
   },
   {
     "productId": 4,
     "title": "Adam Kimmel Watch",
     "description": "The refined way to know the time",
     "img": "https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
-    "category": "Watches",
+    "category": "Accessories",
     "size": "40.5mm",
     "price": 765,
     "location": "Manhattan"
@@ -54,10 +54,10 @@
     "title": "Tan Dress Socks",
     "description": "For the freshest feet",
     "img": "https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
-    "category": "Men's Clothes",
+    "category": "Mens",
     "size": "M",
     "price": 15,
-    "location": "Manhattan"
+    "location": "Staten"
   },
   {
     "productId": 6,
@@ -68,5 +68,136 @@
     "size": "M",
     "price": 65,
     "location": "Manhattan"
+  },
+  {
+    "productId": 7,
+    "title": "Gator Skin Loafer",
+    "description": "For the casual Tuesday",
+    "img": "https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg",
+    "category": "Mens",
+    "size": "10",
+    "price": 650,
+    "location": "Brooklyn"
+  },
+  {
+    "productId": 8,
+    "title": "Tan Vans",
+    "description": "For the fancy Thursday",
+    "img": "https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg",
+    "category": "Womens",
+    "size": "7",
+    "price": 45,
+    "location": "Brooklyn"
+  },
+  {
+    "productId": 9,
+    "title": "Bead Necklace",
+    "description": "Better than puka shell",
+    "img": "https://images.pexels.com/photos/994524/pexels-photo-994524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Accessories",
+    "size": "M",
+    "price": 1000,
+    "location": "Queens"
+  },
+  {
+    "productId": 10,
+    "title": "Diamond and Peal Ring",
+    "description": "Perfect for casual wear",
+    "img": "https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Accessories",
+    "size": 7,
+    "price": 10000,
+    "location": "Manhattan"
+  },
+  {
+    "productId": 11,
+    "title": "Wire Glasses",
+    "description": "The perfect visual",
+    "img": "https://images.pexels.com/photos/1493112/pexels-photo-1493112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Accessories",
+    "size": "M",
+    "price": 200,
+    "location": "Bronx"
+  },
+  {
+    "productId": 12,
+    "title": "Stainless Steel Watch",
+    "description": "Quality... time will tell",
+    "img": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Accessories",
+    "size": "40.5mm",
+    "price": 350,
+    "location": "Bronx"
+  },
+  {
+    "productId": 13,
+    "title": "Casio Edifice Watch",
+    "description": "A fresh way to tell time",
+    "img": "https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Accessories",
+    "size": "40.5mm",
+    "price": 350,
+    "location": "Bronx"
+  },
+  {
+    "productId": 14,
+    "title": "Stainless Steel Reflective Sunglasses",
+    "description": "See the world from behind the mirror glass",
+    "img": "https://images.pexels.com/photos/343720/pexels-photo-343720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Accessories",
+    "size": "L",
+    "price": 150,
+    "location": "Queens"
+  },
+  {
+    "productId": 15,
+    "title": "American Flag Sunglasses",
+    "description": "For those patriotic days",
+    "img": "https://images.pexels.com/photos/860917/pexels-photo-860917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Accessories",
+    "size": "L",
+    "price": 45,
+    "location": "Staten"
+  },
+  {
+    "productId": 16,
+    "title": "Grey Bucket Hat",
+    "description": "Made for sunny vibes",
+    "img": "https://images.pexels.com/photos/9775899/pexels-photo-9775899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Accessories",
+    "size": "L",
+    "price": 30,
+    "location": "Brooklyn"
+  },
+  {
+    "productId": 17,
+    "title": "Green Sweatsuit",
+    "description": "Best worn with a bucket hat",
+    "img": "https://images.pexels.com/photos/9775719/pexels-photo-9775719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Mens",
+    "size": "M",
+    "price": 200,
+    "location": "Brooklyn"
+  },
+  {
+    "productId": 18,
+    "title": "Checked Dress Shirt",
+    "description": "For when you need to be stylin'",
+    "img": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Mens",
+    "size": "M",
+    "price": 125,
+    "location": "Manhattan"
+  },
+  {
+    "productId": 19,
+    "title": "Checked Dress Shirt",
+    "description": "For when you need to be stylin'",
+    "img": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "category": "Mens",
+    "size": "M",
+    "price": 125,
+    "location": "Manhattan"
   }
+
 ]

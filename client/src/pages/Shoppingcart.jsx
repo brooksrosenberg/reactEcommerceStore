@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from "react";
 import './shoppingcart.css';
 import axios from "axios";
-
-
+ 
 const baseURL = "api/cart/find";
 
 export default function Cart() {
@@ -28,9 +27,10 @@ export default function Cart() {
             <div className="cart-items">
                 <li className="cart-list">
                     <ul>{post.map((cart) => {
+                      console.log(cart.products);
                     return (
                       <div key={cart}>
-                      <div>Title:{cart.title}</div>
+                      <div>Title:{cart.products.title}</div>
                       <div>Description:{cart.description}</div>
                       <img className='cart-product-img' alt='cart product'src={cart.img}></img>
                       <div>Category:{cart.category}</div>
@@ -38,15 +38,7 @@ export default function Cart() {
                       <div>Price:{cart.price}</div>
                       <div>Location:{cart.location}</div>
                       </div>
-                      // <div key={product}>
-                      // <div>Title:{product.title}</div>
-                      // <div>Description:{product.description}</div>
-                      // <img className='product-img' src={product.img}></img>
-                      // <div>Category:{product.category}</div>
-                      // <div>Size:{product.size}</div>
-                      // <div>Price:{product.price}</div>
-                      // <div>Location:{product.location}</div>
-                      // </div>
+                    
                     )})}
                     </ul>
                 </li>
