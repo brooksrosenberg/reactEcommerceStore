@@ -7,10 +7,9 @@ const Navbar = () => {
         <div className='navbar-container'>
             <div className="navbar-wrapper">
                 <div className="navbar-left">
-                    <div className="navbar-search-container">
-                        <input className="navbar-input"></input>
-                        🔎
-                    </div>
+                <Link className="navbar-item" to="/category">
+                        Category  
+                </Link>
                 </div>
                 <div className="navbar-center">
                     <h1 className="logo">Craft

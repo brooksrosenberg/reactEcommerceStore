@@ -19,7 +19,7 @@
     background-color: white;
 }
 
-.title {
+.signin-title {
     font-size: 24px;
     font-weight: 300;
 }
@@ -35,6 +35,10 @@
     margin: 20px 10px 0px 0px;
     padding: 10px;
 }
+.input:hover {
+    border-color: rgb(243, 210, 214);
+    background-color: rgb(243, 210, 214);
+}
 
 .button {
     width: 40%;
@@ -42,6 +46,7 @@
     padding: 15px 20px;
     background-color: rgb(243, 210, 214);
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .link {

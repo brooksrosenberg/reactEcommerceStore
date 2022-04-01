@@ -1,10 +1,18 @@
 import React, {useState, useEffect} from "react";
 import './shoppingcart.css';
 import axios from "axios";
+// <<<<<<< fixpdata2.0
  
+// =======
+// import {useNavigate} from 'react-router-dom'
+
+
+// >>>>>>> main
 const baseURL = "api/cart/find";
 
 export default function Cart() {
+  const navigate = useNavigate(); 
+
   const [post, setPost] = useState(null);
   useEffect(() => {
     axios.get(baseURL).then((response) => {
@@ -20,6 +28,19 @@ export default function Cart() {
   console.log(post[0].products)
 
   const products = post[0].products;
+
+  const submitForm = async () => {
+    try {
+      navigate('/pay');
+    }
+    catch(err) {console.log(err)}
+  }
+  const gobackForm = async () => {
+    try {
+      navigate('/');
+    }
+    catch(err) {console.log(err)}
+  }
 
   return (
     <div className="cart-container">
@@ -46,10 +67,15 @@ export default function Cart() {
                     </ul>
                 </li>
             </div>
-          <button className="cart-button">Finish Checkout</button>
+            <div className='checkout-button'>
+              <input onClick={submitForm} type='button' value='Checkout'></input>
+            </div>
+            <div className='Go-Back-button'>
+              <input onClick={gobackForm} type='button' value='Go Back'></input>
+            </div>
         </div>
       </div>
     </div>
   )
-  }
+}
 

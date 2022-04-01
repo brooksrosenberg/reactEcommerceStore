@@ -54,6 +54,10 @@ function App() {
           path='/product'
           element={<Product/>}
         />
+        <Route 
+          path='/product/:id'
+          element={<Product/>}
+        />  
       </Routes>
       <Footer/>
     </Router>

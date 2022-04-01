@@ -1,10 +1,23 @@
 .register-body {
-    display: flex;
+    /* display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
     padding: 10px; 
-    background: linear-gradient(135deg, #87c3eb, #e9e3eb);
+    background: linear-gradient(135deg, #87c3eb, #e9e3eb); */
+
+    width: 100vw;
+    height: 50vw;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6220652/pexels-photo-6220652.jpeg")
+    center;
+    background-size:contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .register-container {
@@ -18,8 +31,11 @@
 .register-title {
     font-size:25px;
     font-weight:500;
-    position: relative;
+    /* position: relative; */
     margin-bottom: 5px; 
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
 }
 
 .register-user-details form {
@@ -54,13 +70,23 @@
     height: 100%;
     width: 100%;
     outline: none;
-    color: #fff;
-    background-color: teal;
+    color: rgb(133, 133, 133);
+    /* background-color: teal; */
+    
     font-size: 16px;
     font-weight: 1000;
     letter-spacing: 1px;
     border-radius: 5px; 
     cursor: pointer;
+}
+
+.response:hover {
+    /* border-color: rgb(243, 210, 214); */
+    background-color: rgb(243, 210, 214);
+}
+
+.register-button input:hover {
+    background-color: rgb(243, 210, 214);
 }
 
 @media (max-width: 584px) {
