@@ -16,7 +16,10 @@ export default function Cart() {
   
 
   if (!post) return null;
-  console.log(post)
+  console.log(post);
+  console.log(post[0].products)
+
+  const products = post[0].products;
 
   return (
     <div className="cart-container">
@@ -26,11 +29,11 @@ export default function Cart() {
           <p className="cart-description">View your items below</p>
             <div className="cart-items">
                 <li className="cart-list">
-                    <ul>{post.map((cart) => {
-                      console.log(cart.products);
+                    <ul>{products.map((cart) => {
+                      console.log(cart.title);
                     return (
                       <div key={cart}>
-                      <div>Title:{cart.products.title}</div>
+                      <div>Title:{cart.title}</div>
                       <div>Description:{cart.description}</div>
                       <img className='cart-product-img' alt='cart product'src={cart.img}></img>
                       <div>Category:{cart.category}</div>
