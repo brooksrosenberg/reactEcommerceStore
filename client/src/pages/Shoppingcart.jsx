@@ -1,13 +1,9 @@
 import React, {useState, useEffect} from "react";
 import './shoppingcart.css';
 import axios from "axios";
-// <<<<<<< fixpdata2.0
- 
-// =======
-// import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 
-// >>>>>>> main
 const baseURL = "api/cart/find";
 
 export default function Cart() {
