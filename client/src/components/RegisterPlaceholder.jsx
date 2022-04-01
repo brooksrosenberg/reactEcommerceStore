@@ -42,7 +42,6 @@ const RegisterPlaceholder = () => {
           <div className='register-user-details'>
             <div className='input-box'>
               <span className='details'>Username</span>
-<<<<<<< HEAD
               <input className='response' type='text' placeholder='Enter your username' required></input>
             </div>
             <div className='input-box'>
@@ -56,17 +55,6 @@ const RegisterPlaceholder = () => {
             <div className='input-box'>
               <span className='details'>Confirm Password</span>
               <input className='response' type='password' placeholder='Confirm your password' required></input>
-=======
-              <input name='username' value={formState.username} onChange={handleChange} type='text' placeholder='Enter your username' required></input>
-            </div>
-            <div className='input-box'>
-              <span className='details'>Email</span>
-              <input name='email' value={formState.email} onChange={handleChange} type='email' placeholder='Enter your email' required></input>
-            </div>
-            <div className='input-box'>
-              <span className='details'>Password</span>
-              <input name='password' value={formState.password} onChange={handleChange} type='password' placeholder='Enter your password' required></input>
->>>>>>> main
             </div>
           </div>
           <div className='register-button'>
