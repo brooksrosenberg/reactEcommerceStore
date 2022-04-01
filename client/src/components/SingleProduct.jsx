@@ -10,21 +10,23 @@ const SingleProduct = ({ item }) => {
           <h3 className='p-title'>{item.title}</h3>
           <p className='p-text'>{item.description}</p>
         </div>
+        <Link to={`/product/${item._id}`}>
         <img src={item.img} className='p-image'></img>
-        <div className="p-info">
+        </Link>
+        {/* <div className="p-info">
           <div className="p-icon">
             <ShoppingCartOutlined/>
           </div>
           <div className="p-icon">
             <FavoriteBorderOutlined/>
           </div>
-          <Link to={`/product/${item._id}`}>
+          
           <div className="p-icon">
             <SearchOutlined/>
-          </div>
-          </Link>
+          </div> */}
+          
         </div>
-      </div>
+      // </div>
       )
 }
       export default SingleProduct

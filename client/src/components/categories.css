@@ -1,7 +1,7 @@
 .cat-container {
     display: flex;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 1;
     text-align: center;
     height: 70vh;
@@ -9,7 +9,7 @@
 }
 
 .ci-image {
-    width: 95%;
+    width: 55%;
     margin: 10px;
 }
 
