@@ -7,14 +7,20 @@ import Pay from './components/Pay';
 import Cart from './pages/Shoppingcart';
 import Success from './components/Success';
 import Product from './pages/Product';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Announcement from './components/Announcement'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
+import ProductList from './components/ProductList';
 
 
 function App() {
   return ( 
     <Router>
+      <Navbar/>
+      <Announcement/>
       <Routes>
         <Route 
           path='/'
@@ -49,7 +55,9 @@ function App() {
           element={<Product/>}
         />
       </Routes>
+      <Footer/>
     </Router>
+    
   );
 }
 
