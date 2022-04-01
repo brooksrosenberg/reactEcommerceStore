@@ -13,6 +13,7 @@ import Announcement from './components/Announcement'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
+import ProductList from './components/ProductList';
 
 
 function App() {

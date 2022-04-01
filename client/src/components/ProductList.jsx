@@ -1,7 +1,8 @@
 import './productList.css'
 import popularProducts from '../products'
-import React from 'react'
-import Product from './Product'
+import React, {useState, useEffect} from 'react'
+import SingleProduct from './SingleProduct'
+import axios from 'axios'
 
 // const [products, setProduct] = useState([]);
 // const getProducts = async (res, req) => {
@@ -19,12 +20,26 @@ import Product from './Product'
 //   getProducts();
 // }, []);
 
+const baseURL = "/api/product"
+
 
 const ProductList = () => {
+  const [products, setProduct] = useState([]);
+  useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setProduct(response.data);
+      console.log(response.data)
+      console.log(products)
+    })
+  }, [])
+
+  if(!products) return null
+  console.log(products)
+
   return (
     <div className='pl-container'>
-        {popularProducts.map((item=>(
-          <Product item={item} key={item.id}/>
+        {products.map((item=>(
+          <SingleProduct item={item} key={item.id}/>
         )))}
     </div>
   )
