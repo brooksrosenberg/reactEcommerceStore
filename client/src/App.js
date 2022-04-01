@@ -10,6 +10,7 @@ import Product from './pages/Product';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
+import ProductList from './components/ProductList';
 
 
 function App() {
