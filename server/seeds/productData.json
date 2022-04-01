@@ -191,16 +191,6 @@
   },
   {
     "productId": 19,
-    "title": "Checked Dress Shirt",
-    "description": "For when you need to be stylin'",
-    "img": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
-    "category": "Mens",
-    "size": "M",
-    "price": 125,
-    "location": "Manhattan"
-  },
-  {
-    "productId": 20,
     "title": "Grey Tank Top",
     "description": "An everyday thing",
     "img": "https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -210,7 +200,7 @@
     "location": "Bronx"
   },
   {
-    "productId": 21,
+    "productId": 20,
     "title": "Blue Striped Sweater",
     "description": "For when you want to feel comfy",
     "img": "https://images.pexels.com/photos/45982/pexels-photo-45982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
