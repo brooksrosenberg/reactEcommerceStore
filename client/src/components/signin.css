@@ -35,6 +35,10 @@
     margin: 20px 10px 0px 0px;
     padding: 10px;
 }
+.input:hover {
+    border-color: rgb(243, 210, 214);
+    background-color: rgb(243, 210, 214);
+}
 
 .button {
     width: 40%;
