@@ -60,6 +60,10 @@
     margin-top: 10px;
 }
 
+.checkout-button input:hover {
+    background-color: rgb(243, 210, 214);
+}
+
 .cart-product-img{
     width: 150px;
     height: 150px;
