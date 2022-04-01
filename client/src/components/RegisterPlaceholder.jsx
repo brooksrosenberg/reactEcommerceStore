@@ -11,19 +11,19 @@ const RegisterPlaceholder = () => {
           <div className='register-user-details'>
             <div className='input-box'>
               <span className='details'>Username</span>
-              <input type='text' placeholder='Enter your username' required></input>
+              <input className='response' type='text' placeholder='Enter your username' required></input>
             </div>
             <div className='input-box'>
               <span className='details'>Email</span>
-              <input type='email' placeholder='Enter your email' required></input>
+              <input className='response' type='email' placeholder='Enter your email' required></input>
             </div>
             <div className='input-box'>
               <span className='details'>Password</span>
-              <input type='password' placeholder='Enter your password' required></input>
+              <input className='response' type='password' placeholder='Enter your password' required></input>
             </div>
             <div className='input-box'>
               <span className='details'>Confirm Password</span>
-              <input type='password' placeholder='Confirm your password' required></input>
+              <input className='response' type='password' placeholder='Confirm your password' required></input>
             </div>
           </div>
           <div className='register-button'>

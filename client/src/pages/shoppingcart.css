@@ -1,7 +1,20 @@
 .cart-container{
+    /* align-items: center;
+    justify-content: center;
+    display: flex;  */
+
+    width: 100vw;
+    height: 50vw;
+    background: linear-gradient(
+        rgba(99, 98, 98, 0.5),
+        rgba(15, 14, 14, 0.5)
+    ),
+    url("https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center fixed;
+    
+    background-size:cover;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex; 
 }
 .cart-card-container{
     border: 1px black solid;
