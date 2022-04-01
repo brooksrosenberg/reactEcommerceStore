@@ -198,6 +198,28 @@
     "size": "M",
     "price": 125,
     "location": "Manhattan"
+  },
+  {
+    "productId": 20,
+    "title": "Grey Tank Top",
+    "description": "An everyday thing",
+    "img": "https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "category": "Womens",
+    "size": "M",
+    "price": 65,
+    "location": "Bronx"
+  },
+  {
+    "productId": 21,
+    "title": "Blue Striped Sweater",
+    "description": "For when you want to feel comfy",
+    "img": "https://images.pexels.com/photos/45982/pexels-photo-45982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "category": "Womens",
+    "size": "M",
+    "price": 165,
+    "location": "Queens"
   }
+  
+
 
 ]
