@@ -1,4 +1,4 @@
-import './categorylist.css'
+import './locationlist.css'
 import React, {useState, useEffect} from 'react'
 import SingleProduct from './SingleProduct'
 import axios from 'axios'
@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom'
 
 const CategoryList = () => {
     const params = useParams();
-    const baseURL = `/api/product?category=${params.category}`
+    const baseURL = `/api/product?location=${params.location}`
 
   const [products, setProduct] = useState([]);
   useEffect(() => {

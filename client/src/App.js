@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Announcement from './components/Announcement'
 import CategoryList from './components/CategoryList'
+import LocationMenu from './components/LocationMenu'
+import LocationList from './components/LocationList'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
@@ -59,6 +61,14 @@ function App() {
           path='/category/:category'
           element={<CategoryList/>}
         />    
+        <Route
+          path='/location'
+          element={<LocationMenu/>}
+        />
+        <Route
+          path='/location/:location'
+          element={<LocationList/>}
+        />
       </Routes>
       <Footer/>
     </Router>
