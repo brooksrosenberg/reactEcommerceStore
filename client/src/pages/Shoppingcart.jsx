@@ -10,9 +10,9 @@ export default function Cart() {
   const cart = useSelector(state=>state.cart)
 
 
-  //AXIOS API CALL
+  
   const navigate = useNavigate(); 
-
+//AXIOS API CALL
   // const [post, setPost] = useState(null);
   // useEffect(() => {
   //   axios.get(baseURL).then((response) => {
