@@ -47,12 +47,15 @@
 
 .slider-bg {
     height: 80%;
-    
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px; 
 }
 
 .slider-title {
     padding: 30px;
     font-size: 70px;
+    margin-right: 20px; 
 }
 
 .slider-description {
@@ -63,6 +66,11 @@
 
 .slider-button {
     width: 100px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-left: 30px;
+    height: 40px;  
+    color:rgb(133, 133, 133);
+    font-weight: bold; 
+    font-size: 16px; 
+    cursor: pointer;
 }
