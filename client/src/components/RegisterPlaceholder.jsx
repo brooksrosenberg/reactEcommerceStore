@@ -10,9 +10,12 @@ const RegisterPlaceholder = () => {
     username: '',
     email: '',
     password: '',
+    
   });
   const handleChange = (event) => {
     const { name, value } = event.target;
+    console.log(event.target.name)
+    console.log(event.target.value)
 
     setFormState({
       ...formState,
@@ -20,10 +23,18 @@ const RegisterPlaceholder = () => {
     });
   };
 
+  const [confirmpassword, setConfirmedPassword] = useState('')
+
   const submitForm = async () => {
+    if (formState.password !== confirmpassword) {
+      alert ("Password does not match. What a memory!!")
+      return
+    }
+
     try {
     console.log(formState);
     const result = await axios.post('/api/auth/register', { ...formState })
+    // localStorage setItem
     console.log(result);
     setFormState({
       username: '',
@@ -42,19 +53,19 @@ const RegisterPlaceholder = () => {
           <div className='register-user-details'>
             <div className='input-box'>
               <span className='details'>Username</span>
-              <input className='response' type='text' placeholder='Enter your username' required></input>
+              <input onChange={handleChange} className='response' type='text' placeholder='Enter your username' name='username' value={formState.username} required></input>
             </div>
             <div className='input-box'>
               <span className='details'>Email</span>
-              <input className='response' type='email' placeholder='Enter your email' required></input>
+              <input onChange={handleChange} className='response' type='email' placeholder='Enter your email' name='email' value={formState.email} required></input>
             </div>
             <div className='input-box'>
               <span className='details'>Password</span>
-              <input className='response' type='password' placeholder='Enter your password' required></input>
+              <input onChange={handleChange} className='response' type='password' placeholder='Enter your password' name='password' value={formState.password} required></input>
             </div>
             <div className='input-box'>
               <span className='details'>Confirm Password</span>
-              <input className='response' type='password' placeholder='Confirm your password' required></input>
+              <input onChange={(event) => setConfirmedPassword(event.target.value)} className='response' type='password' placeholder='Confirm your password' name='confirmpassword' value={confirmpassword} required></input>
             </div>
           </div>
           <div className='register-button'>
