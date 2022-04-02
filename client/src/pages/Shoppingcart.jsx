@@ -60,7 +60,9 @@ export default function Cart() {
                       <img className='cart-product-img' alt='cart product'src={cart.img}></img>
                       <div>Category:{cart.category}</div>
                       {/* <div>Size:{cart.size}</div> */}
+                      <div>Quantity:{cart.quantity}</div>
                       <div>Price:{cart.price}</div>
+                      <div>Total: {cart.quantity * cart.price}</div>
                       <div>Location:{cart.location}</div>
                       </div>
                     
