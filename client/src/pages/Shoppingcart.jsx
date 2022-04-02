@@ -98,12 +98,12 @@ export default function Cart() {
                     return (
                       <div key={cart}>
                         <img className='cart-product-img' alt='cart product'src={cart.img}></img>
-                      <div className="cart-details"> Title: <span className="cart-details-info">{cart.title} </span> </div>
+                      <div className="cart-details"> <span className="cart-details-info">{cart.title} </span> </div>
                       <div className="cart-details"> <span> Description: </span> {cart.description}</div>
-                      <div className="cart-details"> <span> Category: </span> {cart.category}</div>
+                      {/* <div className="cart-details"> <span> Category: </span> {cart.category}</div> */}
                       <div className="cart-details"> <span> Size: </span> {cart.size}</div>
                       <div className="cart-details"> <span> Price: $</span> {cart.price}</div>
-                      <div className="cart-details"> <span> Location: </span> {cart.location}</div>
+                      {/* <div className="cart-details"> <span> Location: </span> {cart.location}</div> */}
                       <br></br>
                       <br></br>
                       </div>
