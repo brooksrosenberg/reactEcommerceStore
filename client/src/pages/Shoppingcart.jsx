@@ -70,6 +70,8 @@ export default function Cart() {
                     </ul>
                 </li>
             </div>
+            <div className="cart-total">
+              <h3>Total: ${cart.total}</h3></div>
             <div className='checkout-button'>
               <input onClick={submitForm} type='button' value='Checkout'></input>
             </div>
