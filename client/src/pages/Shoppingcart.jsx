@@ -2,28 +2,32 @@ import React, {useState, useEffect} from "react";
 import './shoppingcart.css';
 import axios from "axios";
 import {useNavigate} from 'react-router-dom'
-
+import { useSelector } from 'react-redux'
 
 const baseURL = "api/cart/find";
 
 export default function Cart() {
-  const navigate = useNavigate(); 
+  const cart = useSelector(state=>state.cart)
 
-  const [post, setPost] = useState(null);
-  useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPost(response.data);
-      console.log(response.data)
-    });
+
+  
+  const navigate = useNavigate(); 
+//AXIOS API CALL
+  // const [post, setPost] = useState(null);
+  // useEffect(() => {
+  //   axios.get(baseURL).then((response) => {
+  //     setPost(response.data);
+  //     console.log(response.data)
+  //   });
     
-  }, []);
+  // }, []);
   
 
-  if (!post) return null;
-  console.log(post);
-  console.log(post[0].products)
+  // if (!post) return null;
+  // console.log(post);
+  // console.log(post[0].products)
 
-  const products = post[0].products;
+  // const products = post[0].products;
 
   const submitForm = async () => {
     try {
@@ -46,15 +50,16 @@ export default function Cart() {
           <p className="cart-description">View your items below</p>
             <div className="cart-items">
                 <li className="cart-list">
-                    <ul>{products.map((cart) => {
+                  {/* //changing products.map to allProducts.map to get cart items from redux instead of database */}
+                    <ul>{cart.products.map((cart) => {
                       console.log(cart.title);
                     return (
-                      <div key={cart}>
+                      <div key={cart.id}>
                       <div>Title:{cart.title}</div>
-                      <div>Description:{cart.description}</div>
+                      {/* <div>Description:{cart.description}</div> */}
                       <img className='cart-product-img' alt='cart product'src={cart.img}></img>
                       <div>Category:{cart.category}</div>
-                      <div>Size:{cart.size}</div>
+                      {/* <div>Size:{cart.size}</div> */}
                       <div>Price:{cart.price}</div>
                       <div>Location:{cart.location}</div>
                       </div>

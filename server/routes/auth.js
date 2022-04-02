@@ -2,6 +2,8 @@ const router = require('express').Router();
 const User = require('../models/User');
 const CryptoJS = require('crypto-js');
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
+
 
 router.get('/test', (req, res) => {
     res.send('Good test of the auth route')
@@ -47,26 +49,26 @@ router.post('/login', async (req, res) => {
         );
 
         const { password, ...others } = user._doc
-        console.log(`user: ${user}`)
-        console.log(`user._doc: ${user._doc}`)
-        console.log(`accessToken: ${accessToken}`)
+        // console.log(`user: ${user}`)
+        // console.log(`user._doc: ${user._doc}`)
+        // console.log(`accessToken: ${accessToken}`)
 
-        console.log('prefunction')
+        // console.log('prefunction')
         
-        function login(idToken) {
-            console.log(`idtoken ${idToken}`)
-            console.log(typeof(idToken))
-            const token = {
-                id_token: idToken
-            }
-            console.log(typeof(token))
-            localStorage.setItem(token);
-            console.log('here')
-          }
+        // function login(idToken) {
+        //     console.log(`idtoken ${idToken}`)
+        //     console.log(typeof(idToken))
+        //     const token = {
+        //         id_token: idToken
+        //     }
+        //     console.log(typeof(token))
+        //     localStorage.setItem(token);
+        //     console.log('here')
+        //   }
           
-        login(accessToken);
+        // login(accessToken);
         
-        console.log('postfunction')
+        // console.log('postfunction')
         // localStorage.set('token', accessToken);
 
         res.status(200).json({...others, accessToken})

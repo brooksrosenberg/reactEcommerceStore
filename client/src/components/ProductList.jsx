@@ -1,24 +1,7 @@
 import './productList.css'
-import popularProducts from '../products'
 import React, {useState, useEffect} from 'react'
 import SingleProduct from './SingleProduct'
 import axios from 'axios'
-
-// const [products, setProduct] = useState([]);
-// const getProducts = async (res, req) => {
-//   try {
-//     const response = await axios.get('/api/product');
-//     console.log(response.data);
-//     setProduct(response.data);
-    
-//   } catch (err) {
-//     res.status(500).json(err)
-//   }
-// }
-
-// useEffect(()=>{
-//   getProducts();
-// }, []);
 
 const baseURL = "/api/product"
 
