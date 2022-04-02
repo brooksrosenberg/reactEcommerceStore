@@ -55,7 +55,7 @@
     align-items: center;
     /* width:auto; */
     width: 100%;
-    border: 1px rgb(212, 211, 211) solid;  
+    border: 0.5px rgb(212, 211, 211) solid;  
     border-radius: 15px;
 }
 .cart-list{
