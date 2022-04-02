@@ -10,9 +10,10 @@ const LocationItem = ({item}) => {
             <h1 className='li-title'>{item.title}</h1>
         <Link to={`/location/${item.title}`}>    
             <button className='li-button'>Shop Now</button>
-         </Link>   
+        </Link>   
         </div>
     </div>
+   
   )
 }
 
