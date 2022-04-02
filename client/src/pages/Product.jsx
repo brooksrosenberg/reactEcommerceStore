@@ -81,6 +81,8 @@ const Product = () => {
                             </select>
 
                         </div>
+                        <br></br>
+                        <p>Location: {products.location}</p>
                     </div>
 
                     {/* This is for adding it to the cart */}
