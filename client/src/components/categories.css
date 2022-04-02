@@ -14,11 +14,14 @@
 }
 
 .ci-button {
-    border: 1px solid darkgrey;
+    border: 2px solid darkgrey;
     padding: 10px;
-    color: gray;
-    cursor: point;
+    color: black;
+    cursor: pointer;
     font-weight: 600;
+    margin-top: 10px;
+    border-radius: 5px;
+
 }
 
 .ci-info {

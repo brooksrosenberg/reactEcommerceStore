@@ -8,7 +8,7 @@ const SingleProduct = ({ item }) => {
     <div className='p-container'>
         <div className='p-description'>
           <h3 className='p-title'>{item.title}</h3>
-          <p className='p-text'>{item.description}</p>
+          {/* <p className='p-text'>{item.description}</p> */}
         </div>
         <Link to={`/product/${item._id}`}>
         <img src={item.img} className='p-image'></img>

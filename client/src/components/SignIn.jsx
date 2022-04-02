@@ -40,7 +40,7 @@ const SignIn = () => {
             <form onSubmit={submitForm} className='form'>
                 <input name='username' value={formState.username} onChange={handleChange} placeholder='username' className='input'/>
                 <input name='password' value={formState.password} onChange={handleChange} type='password' placeholder='password' className='input'/>
-                <button className='button'> LOGIN </button>
+                <button className='login-button'> LOGIN </button>
                 <p className='link'> 
                   <a href='#'>
                     CREATE A NEW ACCOUNT

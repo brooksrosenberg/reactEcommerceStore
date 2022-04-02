@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='footer-container'>
                 <div className='footer-row2'>
                     <p className='footer-col-sm'>
-                        &copy;{new Date().getFullYear()} LIMITLESS REEFER INC | All Rights Reserved | Terms of Service | Privacy
+                        Copyright &copy;{new Date().getFullYear()} LIMITLESS REEFER INC | All Rights Reserved | Terms of Service | Privacy
                     </p>
                 </div>
             </div>
