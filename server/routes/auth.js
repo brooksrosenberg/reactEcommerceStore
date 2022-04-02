@@ -47,6 +47,27 @@ router.post('/login', async (req, res) => {
         );
 
         const { password, ...others } = user._doc
+        console.log(`user: ${user}`)
+        console.log(`user._doc: ${user._doc}`)
+        console.log(`accessToken: ${accessToken}`)
+
+        console.log('prefunction')
+        
+        function login(idToken) {
+            console.log(`idtoken ${idToken}`)
+            console.log(typeof(idToken))
+            const token = {
+                id_token: idToken
+            }
+            console.log(typeof(token))
+            localStorage.setItem(token);
+            console.log('here')
+          }
+          
+        login(accessToken);
+        
+        console.log('postfunction')
+        // localStorage.set('token', accessToken);
 
         res.status(200).json({...others, accessToken})
 
