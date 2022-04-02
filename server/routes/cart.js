@@ -8,7 +8,7 @@ router.get('/test', (req, res) => {
 });
 
 //CREATE CART -- ANY LOGGED IN USER can create a cart (VerifyToken)
-router.post('/', verifyToken, async (req, res) => {
+router.post('/', async (req, res) => {
     const newCart = new Cart(req.body);
     try {
         const savedCart = await newCart.save();
@@ -19,7 +19,7 @@ router.post('/', verifyToken, async (req, res) => {
 });
 
 //UPDATE cart -- ANY LOGGED in user can update THEIR OWN car (verifyTokenAndAuth)
-router.put('/:id', verifyTokenAndAuth, async (req, res) => {
+router.put('/:id', async (req, res) => {
     try {
         const updatedCart = await Cart.findByIdAndUpdate(
             req.params.id,
@@ -35,7 +35,7 @@ router.put('/:id', verifyTokenAndAuth, async (req, res) => {
 });
 
 //DELETE LOGGED IN USER deletes OWN cart (verifyTokenAndAuth)
-router.delete('/:id', verifyTokenAndAuth, async (req,res) => {
+router.delete('/:id',  async (req,res) => {
     try {
         await Cart.findByIdAndDelete(req.params.id);
         res.status(200).json("Cart was emptied")
@@ -45,7 +45,7 @@ router.delete('/:id', verifyTokenAndAuth, async (req,res) => {
 });
 
 //GET USER cart (verifyTokenAndAuth)
-router.get('/find/:id', verifyTokenAndAuth, async (req, res) => {
+router.get('/find/:id', async (req, res) => {
     try {
         const userCart = await Cart.findOne({ userId: req.params.id});
         res.status(200).json(userCart)
@@ -55,7 +55,7 @@ router.get('/find/:id', verifyTokenAndAuth, async (req, res) => {
 });
 
 //GET ALL CARTS -- ADMIN ONLY (verifyTokenAndAdmin)
-router.get('/find', verifyTokenAndAdmin, async(req,res)=>{
+router.get('/find', async(req,res)=>{
     try {
         const carts = await Cart.find();
         res.status(200).json(carts);
