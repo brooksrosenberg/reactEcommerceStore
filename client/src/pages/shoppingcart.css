@@ -1,6 +1,6 @@
 .cart-container{
-    width: 100vw;
-    height: 50vw;
+    /* width: 100vw;
+    height: 50vw; */
     background: linear-gradient(
         rgba(99, 98, 98, 0.5),
         rgba(15, 14, 14, 0.5)
@@ -11,26 +11,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 2px red solid;  */
+    /* border-radius: 15px; */
 }
 .cart-card-container{
     /* max-width: 500px; */
-    /* width: 100%; */
+    /* width: 200%; */
     /* background: #fff;  */
     padding: 30px 30px 30px; 
     border-radius: 10px;
     opacity: 0.8;
-    /* display: flex; */
+    display: flex;  /*comment this out to change it back to normal */
+    /* border: 2px blue solid;  */
+    /* border-radius: 15px; */
 }
 
 .cart-title {
-    font-size: 36px;
+    /* font-size: 36px; */
     font-weight: bold;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     text-align: center;
+    /* border: 2px black solid;  */
+    /* border-radius: 15px; */
 }
 
 .cart-details {
     font-weight: bold;
+    color: rgb(212, 211, 211);
+    /* border: 2px yellow solid;  */
+    /* border-radius: 15px; */
+}
+.cart-details-info {
+    font-size: 15px;
+    text-decoration: wavy;
 }
 
 .cart-description {
@@ -40,13 +53,16 @@
 
 .cart-items{
     align-items: center;
-    width:auto;
-    /* border: 1px wheat solid;  */
-    /* border-radius: 15px; */
+    /* width:auto; */
+    width: 100%;
+    border: 1px rgb(212, 211, 211) solid;  
+    border-radius: 15px;
 }
 .cart-list{
     list-style-type: none;
-    background-color: rgb(131, 129, 129);
+    /* background-color: rgb(131, 129, 129); */
+    /* border: 2px rgb(247, 0, 255) solid;  */
+    /* border-radius: 15px; */
 }
 .checkout-button input {
     height: 30px;
@@ -81,9 +97,14 @@
     display: flex;
     width: 200px;
     height: 150px;
+    border: 1px; 
+    border-radius: 7px;
 }
 
 .cart-buttons {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
+    /* border: 2px rgb(0, 0, 0) solid;  */
+    /* border-radius: 15px; */
 }

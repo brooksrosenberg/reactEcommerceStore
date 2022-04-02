@@ -39,10 +39,54 @@ export default function Cart() {
   }
 
   return (
+    // <div className="cart-container">
+    //   <div className="cart-wrapper">
+    //     <div className="cart-card-container">
+    //       <h1 className="cart-title">Shopping Bag</h1>
+    //       {/* <p className="cart-description">View your items below</p> */}
+    //         <div className="cart-items">
+    //             <li className="cart-list">
+    //                 <ul>{products.map((cart) => {
+    //                   console.log(cart.title);
+    //                 return (
+    //                   <div key={cart}>
+    //                     <img className='cart-product-img' alt='cart product'src={cart.img}></img>
+    //                   <div> <span className="cart-details"> Title: </span> {cart.title}</div>
+    //                   <div> <span className="cart-details"> Description: </span> {cart.description}</div>
+    //                   <div> <span className="cart-details"> Category: </span> {cart.category}</div>
+    //                   <div> <span className="cart-details"> Size: </span> {cart.size}</div>
+    //                   <div> <span className="cart-details"> Price: $</span> {cart.price}</div>
+    //                   <div> <span className="cart-details"> Location: </span> {cart.location}</div>
+    //                   <br></br>
+    //                   <br></br>
+    //                   </div>
+    //                 )})}
+    //                 </ul>
+    //             </li>
+    //         </div>
+
+    //         <div className="cart-buttons">
+    //           <div className='checkout-button'>
+    //             <input onClick={submitForm} type='button' value='Checkout'></input>
+    //           </div>
+    //           <div className='Go-Back-button'>
+    //             <input onClick={gobackForm} type='button' value='Go Back'></input>
+    //           </div>
+    //         </div>
+           
+    //     </div>
+    //   </div>
+    // </div>
+
+
     <div className="cart-container">
       <div className="cart-wrapper">
+        <div className="cart-title">
+            <h1 >Shopping Bag</h1>
+          </div>
         <div className="cart-card-container">
-          <h1 className="cart-title">Shopping Bag</h1>
+          
+          
           {/* <p className="cart-description">View your items below</p> */}
             <div className="cart-items">
                 <li className="cart-list">
@@ -51,12 +95,12 @@ export default function Cart() {
                     return (
                       <div key={cart}>
                         <img className='cart-product-img' alt='cart product'src={cart.img}></img>
-                      <div> <span className="cart-details"> Title: </span> {cart.title}</div>
-                      <div> <span className="cart-details"> Description: </span> {cart.description}</div>
-                      <div> <span className="cart-details"> Category: </span> {cart.category}</div>
-                      <div> <span className="cart-details"> Size: </span> {cart.size}</div>
-                      <div> <span className="cart-details"> Price: $</span> {cart.price}</div>
-                      <div> <span className="cart-details"> Location: </span> {cart.location}</div>
+                      <div className="cart-details"> Title: <span className="cart-details-info">{cart.title} </span> </div>
+                      <div className="cart-details"> <span> Description: </span> {cart.description}</div>
+                      <div className="cart-details"> <span> Category: </span> {cart.category}</div>
+                      <div className="cart-details"> <span> Size: </span> {cart.size}</div>
+                      <div className="cart-details"> <span> Price: $</span> {cart.price}</div>
+                      <div className="cart-details"> <span> Location: </span> {cart.location}</div>
                       <br></br>
                       <br></br>
                       </div>
@@ -65,7 +109,10 @@ export default function Cart() {
                 </li>
             </div>
 
-            <div className="cart-buttons">
+            
+           
+        </div>
+        <div className="cart-buttons">
               <div className='checkout-button'>
                 <input onClick={submitForm} type='button' value='Checkout'></input>
               </div>
@@ -73,8 +120,6 @@ export default function Cart() {
                 <input onClick={gobackForm} type='button' value='Go Back'></input>
               </div>
             </div>
-           
-        </div>
       </div>
     </div>
   )
