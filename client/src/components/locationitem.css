@@ -1,0 +1,20 @@
+.li-image {
+    height: 466px; 
+    width: 350px; 
+}
+
+.li-button {
+    margin-top: 10px; 
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid;
+    height: 40px;  
+    color:rgb(133, 133, 133);
+    font-weight: bold; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.li-title {
+    font-family: 'Amatic SC', cursive;
+}
