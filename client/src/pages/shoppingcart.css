@@ -60,6 +60,7 @@
 
 .checkout-button input:hover {
     background-color: rgb(243, 210, 214);
+    /* opacity: 0.8; */
 }
 
 .Go-Back-button input {
