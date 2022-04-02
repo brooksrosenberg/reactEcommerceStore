@@ -10,6 +10,9 @@ const Navbar = () => {
                 <Link className="navbar-item" to="/category">
                         Category  
                 </Link>
+                <Link className="navbar-item" to="/location">
+                        Location  
+                </Link>
                 </div>
                 <div className="navbar-center">
                     <h1 className="logo">Craft
