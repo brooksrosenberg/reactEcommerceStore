@@ -17,11 +17,13 @@
     width: 40%;
     padding: 20px;
     background-color: white;
+    border-radius: 10px;
 }
 
 .signin-title {
     font-size: 24px;
     font-weight: 300;
+    text-align: center;
 }
 
 .form {
@@ -29,9 +31,13 @@
     flex-direction: column ;
 }
 
-.input{
+.form input {
+    border-radius: 5px; 
+    width: 93%;
+}
+
+.input {
     flex: 1;
-    min-width: 40%;
     margin: 20px 10px 0px 0px;
     padding: 10px;
 }
@@ -40,17 +46,20 @@
     background-color: rgb(243, 210, 214);
 }
 
-.button {
-    width: 40%;
-    border: none;
-    padding: 15px 20px;
-    background-color: rgb(243, 210, 214);
-    cursor: pointer;
+.login-button {
+    height: 35px;
     margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: rgb(133, 133, 133);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 97%;
 }
 
 .link {
-    margin: 5px 0px;
+    margin: 10px 0px;
     font-size: 12px;
     text-decoration: underline;
     cursor: pointer;
