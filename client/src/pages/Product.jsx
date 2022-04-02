@@ -4,10 +4,16 @@ import Announcement from '../components/Announcement'
 import Navbar from '../components/Navbar'
 import './product.css'
 import axios from 'axios';
+import { addProduct } from '../redux/cartRedux' 
+import { useDispatch } from 'react-redux';
 
 
 
 const Product = () => {
+    const [quantity, setQuantity] = useState(1);
+    const [cartProduct, setCartProduct] = useState({})
+    const dispatch = useDispatch()
+
     const params = useParams();
     console.log(params);
     const baseURL = `/api/product/${params.id}`
@@ -23,6 +29,19 @@ const Product = () => {
 
     if (!products) return null
     console.log(products)
+
+    const handleQuantity = (type) => {
+        if(type === 'dec'){
+            quantity>1 && setQuantity(quantity - 1)
+        } else {
+            setQuantity(quantity + 1)
+        }
+    };
+
+    const handleClick = () =>{
+        //update cart
+        dispatch(addProduct({...cartProduct, quantity }));
+    }
     
     return (
         <div>
@@ -68,10 +87,10 @@ const Product = () => {
 
                     <div className='addContainer'>
                         <div className='amountContainer'>
-                            <span> &#10134;</span>
-                            <span className='amount'> 1</span>
-                            <span> &#10133;</span>
-                            <button className='button'> ADD TO CART </button>
+                            <span onClick={()=>handleQuantity("dec")}> &#10134;</span>
+                            <span className='amount'> {quantity}</span>
+                            <span onClick={()=>handleQuantity("inc")}> &#10133;</span>
+                            <button className='button' onClick={handleClick}> ADD TO CART </button>
                         </div>
                     </div>
                 </div>
