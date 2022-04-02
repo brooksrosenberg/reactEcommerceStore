@@ -39,6 +39,9 @@ export default function Cart() {
   }
 
   return (
+
+    // ORIGINAL DESIGN
+    
     // <div className="cart-container">
     //   <div className="cart-wrapper">
     //     <div className="cart-card-container">
