@@ -40,7 +40,7 @@ const Product = () => {
 
     const handleClick = () =>{
         //update cart
-        dispatch(addProduct({...cartProduct, quantity }));
+        dispatch(addProduct({ products, quantity, price: products.price*quantity }));
     }
     
     return (
