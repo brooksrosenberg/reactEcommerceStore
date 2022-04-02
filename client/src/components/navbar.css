@@ -1,5 +1,6 @@
 .navbar-container {
     height: 60px;
+    background-color:rgb(194, 230, 230);
 }
 
 .navbar-wrapper {
@@ -49,5 +50,9 @@
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
