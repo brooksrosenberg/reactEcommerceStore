@@ -61,7 +61,7 @@
   },
   {
     "productId": 6,
-    "title": "Sunglasses",
+    "title": "Blue Reflective Sunglasses",
     "description": "Stop the sun in style",
     "img": "https://images.pexels.com/photos/701877/pexels-photo-701877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
     "category": "Accessories",
@@ -141,7 +141,7 @@
   },
   {
     "productId": 14,
-    "title": "Stainless Steel Reflective Sunglasses",
+    "title": "Steel Reflective Sunglasses",
     "description": "See the world from behind the mirror glass",
     "img": "https://images.pexels.com/photos/343720/pexels-photo-343720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
     "category": "Accessories",
@@ -161,9 +161,9 @@
   },
   {
     "productId": 16,
-    "title": "Grey Bucket Hat",
+    "title": "Blue Bucket Hat",
     "description": "Made for sunny vibes",
-    "img": "https://images.pexels.com/photos/9775899/pexels-photo-9775899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "img": "https://images.pexels.com/photos/6626879/pexels-photo-6626879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2.jpeg",
     "category": "Accessories",
     "size": "L",
     "price": 30,
@@ -171,9 +171,9 @@
   },
   {
     "productId": 17,
-    "title": "Green Sweatsuit",
+    "title": "Solid Sweatshirt",
     "description": "Best worn with a bucket hat",
-    "img": "https://images.pexels.com/photos/9775719/pexels-photo-9775719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
+    "img": "https://images.pexels.com/photos/7479825/pexels-photo-7479825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2.jpeg",
     "category": "Mens",
     "size": "M",
     "price": 200,
@@ -181,16 +181,6 @@
   },
   {
     "productId": 18,
-    "title": "Checked Dress Shirt",
-    "description": "For when you need to be stylin'",
-    "img": "https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg",
-    "category": "Mens",
-    "size": "M",
-    "price": 125,
-    "location": "Manhattan"
-  },
-  {
-    "productId": 19,
     "title": "Grey Tank Top",
     "description": "An everyday thing",
     "img": "https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -200,7 +190,7 @@
     "location": "Bronx"
   },
   {
-    "productId": 20,
+    "productId": 19,
     "title": "Blue Striped Sweater",
     "description": "For when you want to feel comfy",
     "img": "https://images.pexels.com/photos/45982/pexels-photo-45982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
