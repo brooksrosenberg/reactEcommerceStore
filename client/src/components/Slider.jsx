@@ -1,6 +1,6 @@
 import React from 'react'
 import './slider.css'
-import Flower from '../img/flower-background.jpg'
+import Vans from '../img/pexels-garrett-morrow-702350.jpg'
 
 
 export const Slider = () => {
@@ -8,11 +8,11 @@ export const Slider = () => {
         <div className='slider-container'>
             <div className="slider-wrapper">
                 <div className="image-container">
-                    <img className='slider-bg' src={Flower}></img>
+                    <img className='slider-bg' src={Vans}></img>
                 </div>
                 <div className="info-container">
-                    <h1 className='slider-title'>Test Title</h1>
-                    <p className='slider-description'>TEST DESCRIPTION!! LIMITED SALE!!</p>
+                    <h1 className='slider-title'>New Spring Mens's Collection</h1>
+                    <p className='slider-description'>Checkout the new Spring Men's Collection</p>
                     <button className='slider-button'>Go!</button>
                 </div>
             </div>
