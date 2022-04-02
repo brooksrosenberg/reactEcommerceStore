@@ -7,6 +7,8 @@
     ),
     url("https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center fixed;
     
+    width: 100%;
+    height: 100%;
     background-size:cover;
     display: flex;
     align-items: center;
@@ -40,10 +42,18 @@
     color: rgb(212, 211, 211);
     border: 2px yellow solid; 
     border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+
 }
 .cart-details-info {
     font-size: 15px;
-    text-decoration: wavy;
+    /* text-decoration: wavy; */
+}
+
+.cart-details-div {
+    display: flex;
 }
 
 .cart-description {
@@ -95,12 +105,17 @@
     background-color: rgb(243, 210, 214);
 }
 
+/* .cart-info-div {
+    margin-left: 5px;
+} */
+
 .cart-product-img{
     display: flex;
     width: 200px;
     height: 150px;
     border: 1px; 
     border-radius: 7px;
+    margin-bottom: 45px;
 }
 
 .cart-buttons {
