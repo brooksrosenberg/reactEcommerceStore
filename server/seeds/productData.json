@@ -57,7 +57,7 @@
     "category": "Mens",
     "size": "M",
     "price": 15,
-    "location": "Staten"
+    "location": "Staten Island"
   },
   {
     "productId": 6,
@@ -157,7 +157,7 @@
     "category": "Accessories",
     "size": "L",
     "price": 45,
-    "location": "Staten"
+    "location": "Staten Island"
   },
   {
     "productId": 16,
