@@ -1,7 +1,8 @@
 import './signin.css'
 import React, {useState} from 'react'
 import axios from 'axios'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, Link } from 'react-router-dom'
+
 
 const SignIn = () => {
   const navigate= useNavigate();
@@ -41,11 +42,11 @@ const SignIn = () => {
                 <input name='username' value={formState.username} onChange={handleChange} placeholder='username' className='input'/>
                 <input name='password' value={formState.password} onChange={handleChange} type='password' placeholder='password' className='input'/>
                 <button className='login-button'> LOGIN </button>
+                <Link to="/register">
                 <p className='link'> 
-                  <a href='#'>
                     CREATE A NEW ACCOUNT
-                  </a> 
                 </p>
+                </Link>
             </form>
         </div>
     </section>
