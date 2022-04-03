@@ -5,12 +5,16 @@ import { useSelector } from 'react-redux'
 
 const Navbar = () => {
     const clearStorage = () => {
+        console.log('clear storage function')
         localStorage.clear()
+        window.location.reload(false)
     }
 
     const quantity = useSelector(state=>state.cart.quantity)
     console.log(quantity)
 
+    const token = localStorage.getItem('token')
+    console.log(token)
     return (
         <div className='navbar-container'>
             <div className="navbar-wrapper">
@@ -26,20 +30,31 @@ const Navbar = () => {
                     <h1 className="logo">Craft
                     </h1>
                 </div>
-                <div className="navbar-right">
-                    <Link className="navbar-item" to="/">
-                        Home  
-                    </Link>
-                    <Link className="navbar-item" to="/register">
-                        Register
-                    </Link>
-                    <Link className="navbar-item" to="/signin">
-                        Sign in
-                    </Link>
-                    <Link className="navbar-item" to="/cart">
-                        Cart 🛒{quantity}
-                    </Link>
-                </div>
+                {/* //Conditional Navbar Rendering */}
+                
+                {token ? (
+                    <div className="navbar-right">
+                        <Link className="navbar-item" to="/">
+                            Home
+                        </Link>
+                        <div className='navbar-item' onClick={clearStorage}>Sign Out</div>
+                        <Link className="navbar-item" to="/cart">
+                            Cart 🛒{quantity}
+                        </Link>
+                    </div>
+                ) : (
+                    <div className="navbar-right">
+                        <Link className="navbar-item" to="/">
+                            Home
+                        </Link>
+                        <Link className="navbar-item" to="/register">
+                            Register
+                        </Link>
+                        <Link className="navbar-item" to="/signin">
+                            Sign in
+                        </Link>
+                    </div>
+                )}    
             </div>
         </div>
     )

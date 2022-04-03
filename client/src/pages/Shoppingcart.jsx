@@ -158,6 +158,7 @@ export default Shoppingcart
   // console.log(post[0].products)
 
   // const products = post[0].products;
+<<<<<<< HEAD
 
   /////////////////////////////////////
   /////////////////////////////////////
@@ -365,4 +366,70 @@ export default Shoppingcart
     // </div>
   // )
 //}
+=======
+  const token = localStorage.getItem('token')
+  const username = localStorage.getItem('username')
+  const submitForm = async () => {
+    if (!token) return alert ('You are not logged in, to continue checkout please sign in.')
+    else try {
+      navigate('/pay');
+    }
+    catch(err) {console.log(err)}
+  }
+  const gobackForm = async () => {
+    try {
+      navigate('/');
+    }
+    catch(err) {console.log(err)}
+  }
+
+  const clearCart = () => {
+    window.location.reload(false);
+  };
+
+  return (
+    <div className="cart-container">
+      <div className="cart-wrapper">
+        <div className="cart-card-container">
+          <h1 className="cart-title">{username}'s Bag</h1>
+          <p className="cart-description">View your items below</p>
+            <div className="cart-items">
+                <li className="cart-list">
+                  {/* //changing products.map to allProducts.map to get cart items from redux instead of database */}
+                    <ul>{cart.products.map((cart) => {
+                      console.log(cart.title);
+                    return (
+                      <div key={cart.id}>
+                      <div>Title:{cart.title}</div>
+                      {/* <div>Description:{cart.description}</div> */}
+                      <img className='cart-product-img' alt='cart product'src={cart.img}></img>
+                      <div>Category:{cart.category}</div>
+                      {/* <div>Size:{cart.size}</div> */}
+                      <div>Quantity:{cart.quantity}</div>
+                      <div>Price:{cart.price}</div>
+                      <div>Total: {cart.quantity * cart.price}</div>
+                      <div>Location:{cart.location}</div>
+                      </div>
+                    
+                    )})}
+                    </ul>
+                </li>
+            </div>
+            <div className="cart-total">
+              <h3>Total: ${cart.total}</h3></div>
+            <div className='checkout-button'>
+              <input onClick={submitForm} type='button' value='Checkout'></input>
+            </div>
+            <div className='checkout-button'>
+              <input onClick={clearCart} type='button' value='Clear Cart'></input>
+            </div>
+            <div className='Go-Back-button'>
+              <input onClick={gobackForm} type='button' value='Go Back'></input>
+            </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+>>>>>>> main
 

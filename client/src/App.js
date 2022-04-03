@@ -13,6 +13,7 @@ import Announcement from './components/Announcement'
 import CategoryList from './components/CategoryList'
 import LocationMenu from './components/LocationMenu'
 import LocationList from './components/LocationList'
+import Contact from './components/Contact'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import React from 'react';
@@ -68,6 +69,10 @@ function App() {
         <Route
           path='/location/:location'
           element={<LocationList/>}
+        />
+        <Route
+          path='/contact'
+          element={<Contact/>}
         />
       </Routes>
       <Footer/>
