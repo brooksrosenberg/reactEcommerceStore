@@ -37,7 +37,7 @@ function Shoppingcart() {
 
         <section className="cart-section-bottom">
           <p className="cart-product-info">
-            
+
             <div className="cart-product">
               <div className="cart-product-details">
                 <img className="cart-info-image" src="https://www.hoka.com/dw/image/v2/BDJD_PRD/on/demandware.static/-/Sites-HOKA-US-master/default/dwa8219b60/images/transparent/1110519-BFBG_1.jpg?sw=414&sfrm=png&q=0&bgcolor=FFFFFF"/>
@@ -59,25 +59,6 @@ function Shoppingcart() {
             </div>
 
             <hr className="cart-product-hr"></hr>
-            <div className="cart-product">
-              <div className="cart-product-details">
-                <img className="cart-info-image" src="https://www.cuyana.com/dw/image/v2/BDQQ_PRD/on/demandware.static/-/Sites-master-catalog-cuyana/default/dw55c66231/pdp_white_hero_900x900_panamahat_black_hero_9142_3.jpg?sw=1600"/>
-              <div className="cart-details">
-                <span className="card-info-product-name"> <b> Product: </b> Bershka Hat</span>
-                <span className="card-info-product-id"> <b>Product ID: </b> 857832246786 </span>
-                <span className="card-info-product-color"> Color </span>
-                <span className="card-info-product-size"> <b> Size: </b> Medium </span>
-              </div>
-              </div>
-              <div className="cart-price-detail">
-                <div className="cart-price-detail-container">
-                  <span className="cart-price-minus"> &#10134; </span>
-                  <span className="cart-price-item-number"> 1 </span>
-                  <span className="cart-price-add"> &#10133; </span>
-                </div>
-                <span className="cart-price-amount"> $ 95</span>
-              </div>
-            </div>
           </p>
           <p className="cart-product-summary">
             <span className="summary-title"> ORDER SUMMARY</span>
@@ -98,9 +79,11 @@ function Shoppingcart() {
             </div>
 
             <div className="summary-amount-div"> 
-              <span className="summary-subtotal"> Total</span>
-              <span className="summary-price"> $ 340</span> 
+              <span className="summary-subtotal-total"> Total</span>
+              <span className="summary-price-total"> $ 340</span> 
             </div>
+
+            <button className="summary-checkout-button"> CHECKOUT </button>
             
           </p>
         </section>
