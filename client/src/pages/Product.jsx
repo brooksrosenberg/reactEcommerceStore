@@ -92,7 +92,7 @@ const Product = () => {
                             <span className='quantity-button' onClick={()=>handleQuantity("dec")}> &#10134;</span>
                             <span className='amount'> {quantity}</span>
                             <span className='quantity-button' onClick={()=>handleQuantity("inc")}> &#10133;</span>
-                            <button className='button' onClick={handleClick}> ADD TO CART </button>
+                            <button className='product-button' onClick={handleClick}> ADD TO CART </button>
                         </div>
                     </div>
                 </div>

@@ -88,11 +88,11 @@ function Shoppingcart() {
             </div>
 
             <div className='checkout-button'>
-              <input onClick={submitForm} type='button' value='Checkout'></input>
+              <input className="cart-button" onClick={submitForm} type='button' value='Checkout'></input>
            </div>
             
            <div className='Go-Back-button'>
-              <input onClick={gobackForm} type='button' value='Go Back'></input>
+              <input className="cart-button" onClick={gobackForm} type='button' value='Go Back'></input>
             </div>
             
           </p>

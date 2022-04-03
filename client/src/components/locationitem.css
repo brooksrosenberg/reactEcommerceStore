@@ -13,6 +13,15 @@
     font-weight: bold; 
     font-size: 16px; 
     cursor: pointer;
+    box-shadow: 0 1px #999;
+}
+
+.li-button:hover {
+    background-color: rgb(243, 210, 214);
+}
+
+.li-button:active{
+    box-shadow: 0 0px #999;
 }
 
 .li-title {

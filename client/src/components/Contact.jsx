@@ -26,9 +26,9 @@ const Contact = () => {
             <p className="c-desc">If you would like to be featured on this site, please use this form to contact us</p>
             <form ref={formRef} onSubmit={handleSubmit}>
                 <div className='form-container'>
-                <input type="text" placeholder='Name' name="user_name" />
-                <input type="text" placeholder='Subject' name="user_subject" />
-                <input type="text" placeholder='Email' name="user_email" />
+                <input className="contact-input" type="text" placeholder='Name' name="user_name" />
+                <input className="contact-input" type="text" placeholder='Subject' name="user_subject" />
+                <input className="contact-input" type="text" placeholder='Email' name="user_email" />
                 <textarea rows="5" placeholder='Message' name="message" />
                 </div>
                 <button className='c-button'>submit</button>

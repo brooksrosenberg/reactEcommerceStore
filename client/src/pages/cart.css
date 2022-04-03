@@ -1,8 +1,24 @@
 
 
-.cart-container {
-    
+.cart-button {
+    margin: 10px 0px;
+    color:rgb(0, 12, 22);
+    border-radius: 5px;
+    width: 60%;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #61dafb;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 1px #999;
+}
 
+.cart-button:hover {
+    background-color: rgb(250, 211, 217);
+}
+
+.cart-button:active{
+    box-shadow: 0 0px #999;
 }
 
 .cart-wrapper {
