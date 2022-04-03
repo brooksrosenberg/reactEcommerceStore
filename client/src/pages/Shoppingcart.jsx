@@ -112,7 +112,7 @@ export default function Cart() {
                           {/* <div className="cart-details"> <span> Category: </span> {cart.category}</div> */}
                           <div className="cart-details"> <span> Size: </span> {cart.size}</div>
                           <br></br>
-                          <div className="cart-details"> <span> Price: $</span> {cart.price}</div>
+                          <div className="cart-details"> <span> Price: $ </span> {cart.price}</div>
                           {/* <div className="cart-details"> <span> Location: </span> {cart.location}</div> */}
                           <br></br>
                           <br></br>
