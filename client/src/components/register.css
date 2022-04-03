@@ -45,7 +45,7 @@
 }
 
 .register-user-details .input-box {
-    width: calc(100% / 2 -20px);
+    width: calc(100% -20px);
 }
 
 .register-user-details .input-box input {
