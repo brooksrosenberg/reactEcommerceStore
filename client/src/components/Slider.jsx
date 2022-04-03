@@ -12,7 +12,7 @@ export const Slider = () => {
                     <img className='slider-bg' src={Vans}></img>
                 </div>
                 <div className="info-container">
-                    <h1 className='slider-title'>New Spring Mens's Collection</h1>
+                    <h1 className='slider-title'>New Spring Men's Collection</h1>
                     <p className='slider-description'>Checkout the new Spring Men's Collection</p>
                     <Link to='/category/Mens'>
                     <button className='slider-button'>Go!</button>

@@ -1,5 +1,5 @@
 .navbar-container {
-    height: 60px;
+    height: 90px;
     background-color:rgb(194, 230, 230);
 }
 
@@ -19,6 +19,7 @@
 .navbar-center {
     flex: 1;
     text-align: center;
+    
 }
 
 .navbar-right {
@@ -42,17 +43,21 @@
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 40px;
+    font-weight: 100;
+    font-size: 50px;
+    font-family: 'Monoton', cursive;
+    letter-spacing: 3px; 
+    margin-bottom: 10px; 
 }
 
 .navbar-item {
-    font-size: 14px;
+    font-size: 28px;
     cursor: pointer;
     margin-left: 25px;
     text-decoration: none;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Monoton', cursive; */
+    font-family: 'Amatic SC', cursive;
     font-weight: bold;
 }
 
