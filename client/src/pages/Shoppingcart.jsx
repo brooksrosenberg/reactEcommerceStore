@@ -28,9 +28,10 @@ export default function Cart() {
   // console.log(post[0].products)
 
   // const products = post[0].products;
-
+  const token = localStorage.getItem('token')
   const submitForm = async () => {
-    try {
+    if (!token) return alert ('You are not logged in, to continue checkout please sign in.')
+    else try {
       navigate('/pay');
     }
     catch(err) {console.log(err)}
