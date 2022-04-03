@@ -24,7 +24,7 @@ const Pay = () => {
             try{
                 const res = await axios.post('/api/checkout/payment', {
                     tokenId: stripeToken.id,
-                    amount: 2000,
+                    amount: cart.total*100,
                 })
                 console.log(res.data)
                 navigate("/success");
