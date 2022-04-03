@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 
 const Navbar = () => {
     const clearStorage = () => {
+        console.log('clear storage function')
         localStorage.clear()
     }
 
@@ -35,6 +36,7 @@ const Navbar = () => {
                         <Link className="navbar-item" to="/">
                             Home
                         </Link>
+                        <div className='navbar-item' onClick={clearStorage}>Sign Out</div>
                         <Link className="navbar-item" to="/cart">
                             Cart 🛒{quantity}
                         </Link>
