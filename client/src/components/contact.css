@@ -1,13 +1,19 @@
 .c-container {
     color: black;
     height: 100vh;
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     display: flex;
     position: relative;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/416676/pexels-photo-416676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"),
+    center;
 }
 
 .c-right {
@@ -30,6 +36,8 @@
     margin-top: 50px;
     text-align: center;
     font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    font-size: 48px;
 }
 
 .form-container {
@@ -46,7 +54,7 @@ form{
 
 input {
     margin: 10px 0px;
-    background-color: #cfd7da;
+    background-color: white;
     color:rgb(0, 12, 22);
     border-radius: 5px;
     width: 60%;
@@ -61,7 +69,7 @@ textarea {
     margin: 10px 0px;
     width: 60%;
     height: 135px;
-    background-color: #cfd7da;
+    background-color: white;
     color: rgb(0, 12, 22);
     border-radius: 5px;
     font-size: 14px;
@@ -76,7 +84,7 @@ textarea {
     padding: 15px;
     background-color: teal;
     border-radius: 5px;
-    color: rgb(0, 12, 22);
+    color: white;
     font-weight: 600;
     cursor: pointer;
 }

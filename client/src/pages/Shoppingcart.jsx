@@ -81,6 +81,7 @@ function Shoppingcart() {
               <span className="summary-subtotal"> Shipping Discount</span>
               <span className="summary-price"> FREE </span>
             </div>
+<<<<<<< HEAD
 
             <div className="summary-amount-div"> 
               <span className="summary-subtotal-total"> Total</span>
@@ -92,6 +93,9 @@ function Shoppingcart() {
            </div>
             
            <div className='Go-Back-button'>
+=======
+            <div className='Go-Back-button'>
+>>>>>>> main
               <input onClick={gobackForm} type='button' value='Go Back'></input>
             </div>
             

@@ -35,7 +35,18 @@ const Pay = () => {
         stripeToken && makeRequest()
     }, [stripeToken, navigate])
 
+    const name = localStorage.getItem('username')
+
   return (
+    <div className='main-container' >
+    <div className='name-container'>
+        <h1>Thank you for {name} shopping with Craft!</h1>
+        <br></br>
+        <p>If you are New York artist and want you work featured, reach out in the Contact page linked below!</p>
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
     <div className='pay-container'>
         <StripeCheckout 
             name="Craft"
@@ -48,6 +59,7 @@ const Pay = () => {
             >
             <button className='pay-button'>Pay Now!</button>
         </StripeCheckout>
+    </div>
     </div>
   )
 }
