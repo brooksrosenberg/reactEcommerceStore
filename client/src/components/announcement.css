@@ -1,5 +1,5 @@
 .a-container {
-    height: 30px;
+    height: 40px;
     background-color: teal;
     color: white;
     display: flex;
@@ -7,4 +7,5 @@
     justify-content: center;
     font-size: 14px;
     font-weight: bolder;
+    letter-spacing: 1px;
 }
