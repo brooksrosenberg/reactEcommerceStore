@@ -11,6 +11,7 @@
 .ci-image {
     width: 55%;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .ci-button {
