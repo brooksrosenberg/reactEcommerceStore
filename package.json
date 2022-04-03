@@ -23,6 +23,8 @@
   "homepage": "https://github.com/brooksrosenberg/reactEcommerceStore#readme",
   "dependencies": {
     "axios": "^0.26.1",
-    "concurrently": "^7.0.0"
+    "concurrently": "^7.0.0",
+    "emailjs": "^3.8.0",
+    "emailjs-com": "^3.2.0"
   }
 }

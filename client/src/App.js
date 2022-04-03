@@ -4,7 +4,7 @@ import Category from './components/Categories'
 import RegisterPlaceholder from './components/RegisterPlaceholder';
 import SignIn from './components/SignIn';
 import Pay from './components/Pay';
-import Cart from './pages/Shoppingcart';
+import Cart from './pages/Shoppingcart';   // changed this from Shoppingcart to cart
 import Success from './components/Success';
 import Product from './pages/Product';
 import Footer from './components/Footer';
