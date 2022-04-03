@@ -83,6 +83,7 @@ textarea {
 
 .thanks {
     margin-top: 15px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 480px){
