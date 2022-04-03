@@ -52,7 +52,7 @@ form{
     text-align: center;
 }
 
-input {
+.contact-input {
     margin: 10px 0px;
     background-color: white;
     color:rgb(0, 12, 22);
@@ -87,6 +87,11 @@ textarea {
     color: white;
     font-weight: 600;
     cursor: pointer;
+    box-shadow: 0 2px #999;
+}
+
+.c-button:active{
+    box-shadow: 0 0px #999;
 }
 
 .thanks {

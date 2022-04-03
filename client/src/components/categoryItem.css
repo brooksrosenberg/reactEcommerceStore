@@ -1,0 +1,12 @@
+.ci-button {
+    color:rgb(133, 133, 133);
+    box-shadow: 0 1px #999;
+}
+
+.ci-button:hover {
+    background-color: rgb(243, 210, 214);
+}
+
+.ci-button:active{
+    box-shadow: 0 0px #999;
+}

@@ -105,17 +105,22 @@
     background-color: rgb(250, 211, 217);
 }
 
-.button {
+.product-button {
     padding: 15px;
     border: 2px solid teal;
     border-radius: 8px;
     background-color: white;
     cursor: pointer;
     font-weight: 500;
-    margin-left: 20px; 
+    margin-left: 20px;
+    box-shadow: 0 1px #999; 
 }
-.button:hover {
+.product-button:hover {
     background-color: rgb(250, 211, 217);
+}
+
+.product-button:active{
+    box-shadow: 0 0px #999;
 }
 
 .quantity-button {
