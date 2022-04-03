@@ -25,6 +25,21 @@ const SignIn = () => {
       try {
         const result = await axios.post('/api/auth/login', { ...formState })
         console.log(result);
+        console.log(result.data)
+        console.log(result.data.accessToken)
+        const token = result.data.accessToken
+        const username = result.data.username
+        const isAdmin = result.data.isAdmin
+        const userId = result.data._id
+
+        localStorage.setItem("token", token)
+        localStorage.setItem('username', username)
+        localStorage.setItem('isAdmin', isAdmin)
+        localStorage.setItem('userId', userId)
+
+        const tokenTest = localStorage.getItem('token')
+        console.log(`token ${tokenTest}`)
+
         setFormState ({
           username: '',
           password: '',
