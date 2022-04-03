@@ -89,9 +89,9 @@ const Product = () => {
 
                     <div className='addContainer'>
                         <div className='amountContainer'>
-                            <span onClick={()=>handleQuantity("dec")}> &#10134;</span>
+                            <span className='quantity-button' onClick={()=>handleQuantity("dec")}> &#10134;</span>
                             <span className='amount'> {quantity}</span>
-                            <span onClick={()=>handleQuantity("inc")}> &#10133;</span>
+                            <span className='quantity-button' onClick={()=>handleQuantity("inc")}> &#10133;</span>
                             <button className='button' onClick={handleClick}> ADD TO CART </button>
                         </div>
                     </div>

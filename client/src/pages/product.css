@@ -117,3 +117,7 @@
 .button:hover {
     background-color: rgb(250, 211, 217);
 }
+
+.quantity-button {
+    cursor: pointer;
+}
