@@ -73,6 +73,8 @@
 
 .cart-info-image{
     width: 200px;
+    padding: 20px;
+    border-radius: 50px;
 }
 
 .cart-details{
@@ -80,6 +82,14 @@
     flex-direction: column;
     padding: 20px;
     justify-content: space-around;
+}
+
+.cart-price-detail{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    font-size: 100px;
 }
 
 .cart-product-hr{
