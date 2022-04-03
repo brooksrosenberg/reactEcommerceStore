@@ -1,8 +1,16 @@
 import React from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
+    const clearStorage = () => {
+        localStorage.clear()
+    }
+
+    const quantity = useSelector(state=>state.cart.quantity)
+    console.log(quantity)
+
     return (
         <div className='navbar-container'>
             <div className="navbar-wrapper">
@@ -29,7 +37,7 @@ const Navbar = () => {
                         Sign in
                     </Link>
                     <Link className="navbar-item" to="/cart">
-                        Cart 🛒
+                        Cart 🛒{quantity}
                     </Link>
                 </div>
             </div>

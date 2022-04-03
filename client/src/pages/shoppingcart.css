@@ -119,6 +119,7 @@ body {
     display: flex;
     width: 200px;
     height: 150px;
+<<<<<<< HEAD
     border: 1px; 
     border-radius: 7px;
     margin-bottom: 45px;
@@ -132,4 +133,12 @@ body {
     margin-left: 70px;
     /* border: 2px rgb(0, 0, 0) solid; 
     border-radius: 15px; */
+=======
+}
+
+.cart-total {
+    padding-top:30px;
+    padding-bottom: 20px;
+    text-align: center;
+>>>>>>> main
 }

@@ -1,7 +1,25 @@
+* {
+    margin: 0;
+}
+
 .footer-col-sm {
-    text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgb(235, 195, 64);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+  /* text-align: center;
     font-size: 20px;
     position: fixed; 
     bottom: 0; 
     width: 100%;
-}
+    background-color: teal;
+    height: 80px;
+    color: white; */

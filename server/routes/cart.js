@@ -35,7 +35,7 @@ router.put('/:id', async (req, res) => {
 });
 
 //DELETE LOGGED IN USER deletes OWN cart (verifyTokenAndAuth)
-router.delete('/:id', async (req,res) => {
+router.delete('/:id',  async (req,res) => {
     try {
         await Cart.findByIdAndDelete(req.params.id);
         res.status(200).json("Cart was emptied")
