@@ -7,6 +7,7 @@ const Navbar = () => {
     const clearStorage = () => {
         console.log('clear storage function')
         localStorage.clear()
+        window.location.reload(false)
     }
 
     const quantity = useSelector(state=>state.cart.quantity)

@@ -45,6 +45,7 @@ const SignIn = () => {
           password: '',
         });
         navigate('/');
+        window.location.reload(false);
       }
       catch (err) {console.log(err)}
     }
