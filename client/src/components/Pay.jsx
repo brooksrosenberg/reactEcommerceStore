@@ -27,7 +27,7 @@ const Pay = () => {
                     amount: cart.total*100,
                 })
                 console.log(res.data)
-                navigate("/success");
+                navigate("/success", { replace:true });
             } catch (err) {
                 console.log(err)
             }
