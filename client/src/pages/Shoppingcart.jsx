@@ -29,6 +29,7 @@ export default function Cart() {
 
   // const products = post[0].products;
   const token = localStorage.getItem('token')
+  const username = localStorage.getItem('username')
   const submitForm = async () => {
     if (!token) return alert ('You are not logged in, to continue checkout please sign in.')
     else try {
@@ -47,7 +48,7 @@ export default function Cart() {
     <div className="cart-container">
       <div className="cart-wrapper">
         <div className="cart-card-container">
-          <h1 className="cart-title">Your Bag</h1>
+          <h1 className="cart-title">{username}'s Bag</h1>
           <p className="cart-description">View your items below</p>
             <div className="cart-items">
                 <li className="cart-list">
