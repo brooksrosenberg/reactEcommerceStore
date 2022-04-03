@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 const Navbar = () => {
+    const clearStorage = () => {
+        localStorage.clear()
+    }
+
     const quantity = useSelector(state=>state.cart.quantity)
     console.log(quantity)
 
