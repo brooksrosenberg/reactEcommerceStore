@@ -44,6 +44,10 @@ export default function Cart() {
     catch(err) {console.log(err)}
   }
 
+  const clearCart = () => {
+    window.location.reload(false);
+  };
+
   return (
     <div className="cart-container">
       <div className="cart-wrapper">
@@ -76,6 +80,9 @@ export default function Cart() {
               <h3>Total: ${cart.total}</h3></div>
             <div className='checkout-button'>
               <input onClick={submitForm} type='button' value='Checkout'></input>
+            </div>
+            <div className='checkout-button'>
+              <input onClick={clearCart} type='button' value='Clear Cart'></input>
             </div>
             <div className='Go-Back-button'>
               <input onClick={gobackForm} type='button' value='Go Back'></input>
