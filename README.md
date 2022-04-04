@@ -1,4 +1,4 @@
-# reactEcommerceStore
+# Craft Ecommerce-Store
  
 ## Description: 
   We designed a E-commerce style store made for local content creators to find their voice in the ethos of the internet. 
@@ -29,9 +29,9 @@
 ## Contributors:
    Will, Rim, Brooks, Colin 
 ## Github User Names:
-  Here is a link to our Github Repository: https://github.com/Will-Neal https://github.com/brooksrosenberg https://github.com/Shalah https://github.com/GundamMosi10 
+  Here is a link to our Github Repository: https://github.com/Will-Neal || https://github.com/brooksrosenberg || https://github.com/Shalah || https://github.com/GundamMosi10 
 ## Email:
-  If you have any questions or would like to get in contact with us you can email us here: Will: willwneal@gmail.com Brooks: bjtr@bu.edu Rim: zoungranaala@gmail.com Colin: cargile10@gmail.com
+  If you have any questions or would like to get in contact with us you can email us here: Will: willwneal@gmail.com || Brooks: bjtr@bu.edu || Rim: zoungranaala@gmail.com || Colin: cargile10@gmail.com
 ## Test: 
   There are no tests associated with this project. 
 
