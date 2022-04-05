@@ -21,6 +21,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+})
+
 db.once('open', () => console.log('connected to Database'));
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
